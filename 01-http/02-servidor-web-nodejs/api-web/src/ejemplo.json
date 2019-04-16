@@ -1,0 +1,13 @@
+[
+  {
+    "nombre": "Gorky",
+    "apellido": "Muñoz",
+    "edad": 22,
+    "sueldo": 200.10,
+    "casado": false,
+    "hijos": null,
+    "mascotas": ["pipo",1,1.01,false,null,
+      {"nombre": "pipo"}
+    ]
+  }
+]
