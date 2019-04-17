@@ -1,5 +1,6 @@
-import {Controller, Delete, Get, Headers, Post, Put} from '@nestjs/common';
+import {Body, Controller, Delete, Get, Headers, Post, Put, Query, Param, Response, Request} from '@nestjs/common';
 import { AppService } from './app.service';
+
 @Controller('/api')
 export class AppController {
   constructor(private readonly appService: AppService) {}
@@ -24,18 +25,70 @@ export class AppController {
     return 'Hallo welt'
   }
 
-  @Get('adivina')
+  @Get('/adivina')
   adivina(@Headers() headers): string {
     const numeroRandomico = Math.round(Math.random()*10);
     const numeroDeCabecera = Number(headers.numero);
     if(numeroRandomico == numeroDeCabecera)
     {
+      console.log(numeroDeCabecera);
+      console.log(numeroRandomico);
       return 'Adivinaste';
     }else{
       return 'Sigue intentando';
     }
-
   }
+
+  //enviar algo por consulta
+  //?llave=valor&llave2=valor2
+  @Get('/consultar')
+  consultar(@Query() queryParams){
+    console.log(queryParams);
+    if(queryParams.nombre){
+      return 'Hola ' + queryParams.nombre
+    }else{
+      return 'Hola extraño'
+    }
+  }
+//:URL -> Esta parte es dinámica
+  @Get('/ciudad/:idCiudad')
+  ciudad(@Param() parametrosRuta){
+    switch (parametrosRuta.idCiudad.toLowerCase()) {
+      case 'quito':
+        return 'Que fueff';
+      case 'guayaquil':
+        return 'Que maah ñañoshhh';
+      default:
+        return 'Buenas tardes';
+    }
+  }
+@Post('/registroComida')
+    registroComida(
+        @Body() parametrosCuerpo,@Response() response) {
+    if(parametrosCuerpo.nombre && parametrosCuerpo.cantidad){
+      const cantidad = Number(parametrosCuerpo.cantidad);
+      if(cantidad>1){
+        response.set('Premio','Fanesca');
+      }
+      return response.send({mensaje:'Registro creado'});
+    }else{
+      return response.status(400)
+          .send({mensaje:'Error, no envia nombre o cantidad',
+                error: 400});
+    }
+}
+
+@Get('/semilla')
+semilla(@Request() request){
+    console.log(request.cookies);
+    const cookies = request.cookies;
+    if(cookies.micookie){
+      return 'ok';
+    }else{
+      return ':(';
+    }
+}
+
   /*
   Segmento inicial: api
     1. segmento accion: 'hello-world' - GET
