@@ -1,6 +1,3 @@
-# Munoz-Galvan-Gorky-AndresjpMq
-Cambio 1.1.1
-Cambio 2
-Cambio 3
-Juanita 1
-Restar negativos
+# Munoz-Galvan-Gorky-Andres
+
+Las tareas se encuentran en la carpeta "Deberes"
