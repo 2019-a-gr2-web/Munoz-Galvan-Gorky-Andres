@@ -87,7 +87,7 @@ semilla(@Request() request,
     const esquemaValidacionNumero = Joi
         .object()
         .keys({
-          numero: Joi.number().integer().required()
+            numero: Joi.number().integer().required()
         });
 
     const objetoValidacion = {
