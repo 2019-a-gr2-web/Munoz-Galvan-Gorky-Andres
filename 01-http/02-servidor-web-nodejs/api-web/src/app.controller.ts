@@ -79,6 +79,12 @@ export class AppController {
     }
 }
 
+@Get('/inicio')
+inicio(@Response() res){
+    return res.render('inicio');
+
+}
+
 @Get('/semilla')
 semilla(@Request() request,
         @Response() response){
@@ -187,3 +193,113 @@ objeto['propiedadTres'] = 'valor 3';
 //eliminar propiedades
 delete objeto.propiedadTres;
 objeto.propiedadTres = undefined;
+
+function holaMundo() {
+    console.log('Hola mundo')
+}
+const respuestaHolaMundo = holaMundo();
+console.log('Respuesta hola mundo: ',respuestaHolaMundo);
+function suma(a:number,b:number):number {
+    return a+b;
+}
+const respuestaSuma = suma(12,2);
+console.log('Respuesta suma:',respuestaSuma);
+
+//Condicionales
+//Truty -> true
+//Falsy -> false
+if(true){ //Truty
+    console.log('Verdadero');
+}else{
+    console.log('Falso')
+}
+
+if(false){//falsy
+    console.log('Falso');
+}else{
+    console.log('Verdadero')
+}
+
+if(""){ //un string vacío es falso
+    console.log('Verdadero ""');
+}else{
+    console.log('Falso ""')
+}
+
+if("a"){ //un string con más de un caracter es verdadero
+    console.log('Verdadero "a"');
+}else{
+    console.log('Falso "a"')
+}
+
+if("-1"){ //un string con más de un caracter es verdadero
+    console.log('Verdadero "-1"');
+}else{
+    console.log('Falso "-1"')
+}
+
+if("1"){ //un string con más de un caracter es verdadero
+    console.log('Verdadero "1"');
+}else{
+    console.log('Falso "1"')
+}
+
+if({}){ //un objeto json es truty
+    console.log('Verdadero "{}"');
+}else{
+    console.log('Falso "{}"')
+}
+
+//Operadores de arreglos en JS
+// 1) Imrpiman en consola todos los elementos
+const arregloNumerosForEach = [1,2,3,4,5,6];
+
+const rForEach = arregloNumerosForEach
+    .forEach(n => console.log(`${n}`));
+console.log(`Respuesta foreach: ${rForEach}`);
+
+// 2) Sumen 2 a los pares y 1 a los impares
+
+const arregloNumerosMap = [1,2,3,4,5,6];
+const rMap = arregloNumerosMap
+    .map( //Devolver el nuevo valor de ese elemento
+    (valorActual)=>{
+        const esPar = valorActual%2==0;
+        if(esPar){
+            return valorActual+2;
+        }else{
+            return valorActual+1;
+        }
+    });
+console.log(`Respuesta map: ${rMap}`);
+
+// 3) Encuentren si hay el numero 4
+const arregloNumerosFind = [1,2,3,4,5,6];
+const rFind = arregloNumerosFind
+    .find( //Condicion para deovlver el elemento
+        (valorActual)=>{
+            return valorActual ==4;
+        }
+    );
+console.log(`Respuesta FIND: ${rFind}`);
+
+// 4) Filtren los numeros menores a 5
+const arregloNumerosFilter = [1,2,3,4,5,6];
+const rFilter = arregloNumerosFilter
+    .filter( //CONDICION TRUE -> agrega al arreglo
+        //      CONDICION FALSA -> se omite del arreglo
+        (valorActual)=>{
+            return valorActual<5;
+        }
+    );
+console.log(`Respuesta filter ${rFilter}`);
+// 5) Todos los valores positivos
+// 6) Algún valor es menor que 2
+// 7) Sumen todos los valores
+// 9) Resten todos los valores
+
+
+// 1.1) Sumen 10 a todos
+// 1.2) Filtren los mayores a 15
+// 1.3) Si hay algún número mayor a 30
+
