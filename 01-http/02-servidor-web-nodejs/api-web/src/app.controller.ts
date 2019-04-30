@@ -294,12 +294,65 @@ const rFilter = arregloNumerosFilter
     );
 console.log(`Respuesta filter ${rFilter}`);
 // 5) Todos los valores positivos
+const arregloNumerosEvery = [1,2,3,4,5,6];
+const rEvery = arregloNumerosEvery //AND
+    .every( //si TODOS cumple -> TRUE
+            //SI ALGUNO no cumple -> FALSE
+        (valorActual)=>{
+            return valorActual>0;
+        }
+     );
+console.log(`Respuesta every ${rEvery}`);
 // 6) Algún valor es menor que 2
+const arregloNumerosSome = [1,2,3,4,5,6];
+const rSome = arregloNumerosSome
+    .some(
+        (valorActual)=>{
+            return valorActual<2
+        });
+console.log(rSome);
 // 7) Sumen todos los valores
-// 9) Resten todos los valores
+const arregloNumerosReduce = [1,2,3,4,5,6];
+const valorDondeEmpiezaCalculo = 0;
+//< 4
+//10% + 5
+//>= 4
+//15%+3
+const rReduce = arregloNumerosReduce
+    .reduce(
+        (acumulado,valorActual)=>{
+            if(valorActual<4){
+                return acumulado+(valorActual*1.1)+5;
+            }else{
+                return acumulado+(valorActual*1.15)+3;
+            }
+},valorDondeEmpiezaCalculo);
+console.log(rReduce);
+// 9) Resten todos los valores de 100
+const arregloNumerosReduce2 = [1,2,3,4,5,6];
+const valorDondeEmpiezaCalculo2 = 100;
+//< 4
+//10% + 5
+//>= 4
+//15%+3
+const rReduce2 = arregloNumerosReduce2
+    .reduce(
+        (acumulado,valorActual)=>{
+            if(valorActual<4){
+                return acumulado-valorActual;
+            }else{
+                return acumulado-valorActual;
+            }
+        },valorDondeEmpiezaCalculo2);
+console.log(rReduce2);
 
-
-// 1.1) Sumen 10 a todos
+// 1.1) Sumen 10 a todos los elementos
 // 1.2) Filtren los mayores a 15
 // 1.3) Si hay algún número mayor a 30
 
+const arregloEjercicio = [1,2,3,4,5,6];
+const rArregloEjercicio = arregloEjercicio
+    .map((valorActual)=>{return valorActual+10})
+    .filter((valorActual)=>{return valorActual>15})
+    .some((valorActual)=>{return valorActual>30});
+console.log(rArregloEjercicio);

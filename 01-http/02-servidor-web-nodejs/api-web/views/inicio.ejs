@@ -1,4 +1,16 @@
 <% const nombre = 'gorkyjaus' //codigo JS %>
 <%=nombre%>
-<% const arreglo = [1,2,3,4,5];%>
-<%  %>
+<%const arreglo = [1,2,3,4,5];%>
+<%=arreglo%>
+<%const objeto = {nombre:'Gorky'};%>
+<%= objeto %>
+
+<% arreglo.forEach((valorActual)=>{%>
+<p>Numero: <%=valorActual%></p>
+<%})%>
+
+<ul>
+    <% arreglo.forEach((valorActual)=>{%>
+    <li>Numero: <%=valorActual%></li>
+    <%})%>
+</ul>
