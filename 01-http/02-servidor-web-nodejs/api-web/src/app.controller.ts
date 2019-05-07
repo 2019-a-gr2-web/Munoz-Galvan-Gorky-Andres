@@ -81,9 +81,22 @@ export class AppController {
 
 @Get('/inicio')
 inicio(@Response() res){
-    return res.render('inicio');
+    return res.render('inicio',{
+        estaVivo:false,
+        prueba:12,
+        numero:3
+    });
 
 }
+
+    @Get('/peliculas')
+    peliculas(@Response() res){
+        return res.render(
+            'peliculas/inicio',{
+        });
+
+    }
+
 
 @Get('/semilla')
 semilla(@Request() request,
