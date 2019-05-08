@@ -89,12 +89,19 @@ inicio(@Response() res){
 
 }
 
-    @Get('/peliculas')
+    @Get('/peliculas') //Endpoint
     peliculas(@Response() res){
         return res.render(
             'peliculas/inicio',{
         });
 
+    }
+
+    @Get('estilos') //Endpoint
+    estilos(@Response() res){
+        return res.render(
+            'peliculas/estilos',{
+            });
     }
 
 
