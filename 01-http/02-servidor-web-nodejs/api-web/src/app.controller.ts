@@ -4,6 +4,7 @@ import * as Joi from '@hapi/joi';
 
 @Controller('/api')
 export class AppController {
+    arregloUsuarios:[];
   constructor(private readonly appService: AppService) {}
 
   @Get('/hello-world')
@@ -103,6 +104,17 @@ inicio(@Response() res){
             'peliculas/estilos',{
             });
     }
+
+
+
+    @Get('formulario') //Endpoint
+    formulario(@Response() res){
+        return res.render(
+            'peliculas/estilos',{
+            });
+    }
+
+
 
 
 @Get('/semilla')
