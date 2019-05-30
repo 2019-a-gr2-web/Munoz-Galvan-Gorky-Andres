@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Información papás</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        table,tr,td,th{
+            border:solid black 1px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8"></div>
+        <div class="col-sm-2">
+            <%=nombreUsuarioParametro%>
+        </div>
+        <div class="col-sm-2">
+            <form action="/api/logout">
+                <button>Salir</button>
+            </form>
+        </div>
+    </div>
+
+    <form action="/api/tienda/buscar-tienda"
+          method="post"
+    >
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6">
+                <label for="busquedaId">Búsqueda</label>
+                <input type="text" id="busquedaId" name="nombreTienda">
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3">
+                <button>Buscar</button>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+    </form>
+
+
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-sm-8"></div>
+        <div class="col-sm-3">
+            <form action="crear-tienda">
+                <Button>Crear</Button>
+            </form>
+        </div>
+        <div class="col-sm-1"></div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+    <table class="table-responsive">
+        <tr>
+            <th>numero Producto</th>
+            <th>nombre</th>
+            <th>Direccion</th>
+            <th>Fecha de apertura</th>
+            <th>RUC</th>
+            <th>Matriz</th>
+        </tr>
+        <%listaHijos.forEach((tienda)=>{%>
+        <tr>
+            <td><%=tienda.nombre%></td>
+            <td><%=tienda.fechaApertura%></td>
+            <td><%=tienda.RUC%></td>
+            <td><%=tienda.matriz%></td>
+            <td><%=tienda.direccion%></td>
+            <td>
+                <form action="/api/tienda/eliminar"
+                      method="post">
+                    <label for="TiendaId"></label>
+                    <input id="TiendaId" type="text" name="id" value="<%=tienda.id%>" hidden>
+                    <button>Eliminar</button>
+                </form>
+                <form action="api/tienda/gestionar-hijos/id=<%=tienda.id%>">
+                    <button>Gestionar Hijos</button>
+                </form>
+            </td>
+
+        </tr>
+        <%}) %>
+    </table>
+
+</div>
+
+</div>
+</body>
+</html>

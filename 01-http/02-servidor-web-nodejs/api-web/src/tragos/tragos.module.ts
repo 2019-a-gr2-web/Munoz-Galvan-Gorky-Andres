@@ -9,6 +9,4 @@ import {TragosService} from "./tragos.service";
     exports: [TragosService] //Exportar servicios
 })
 export class TragosModule {
-
-
 }

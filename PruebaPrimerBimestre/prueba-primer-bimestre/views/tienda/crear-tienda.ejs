@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crear tienda</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8"></div>
+        <div class="col-sm-2">
+            <%=nombreUsuarioParametro%>
+        </div>
+        <div class="col-sm-2">
+            <form action="/api/logout">
+                <button>Salir</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <form action="/api/tienda/registrar-tienda"
+                  method="post"
+            >
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="nombreTienda">Nombre</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" name="nombre" id="nombreTienda">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="direccionTienda">Direccion</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" name="direccion" id="direccionTienda">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="fechaApertura">Fecha apertura</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="date" name="fechaApertura" id="fechaApertura">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="rucTienda">RUC</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="number" name="RUC" id="rucTienda">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="matrizTienda">Matriz</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="checkbox" name="matriz" id="matrizTienda">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <a href="/api/tienda/listar-papas" target="_parent">
+                            <button type="button">Cancelar</button>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <button>Crear</button>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>
+</body>
+</html>
