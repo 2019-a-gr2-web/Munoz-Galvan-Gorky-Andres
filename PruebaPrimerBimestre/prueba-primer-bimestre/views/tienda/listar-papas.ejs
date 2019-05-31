@@ -21,10 +21,10 @@
     <div class="row">
         <div class="col-sm-8"></div>
         <div class="col-sm-2">
-            <%=nombreUsuarioParametro%>
+            <%=nombreUsuario%>
         </div>
         <div class="col-sm-2">
-            <form action="/api/logout">
+            <form action="/api/home">
                 <button>Salir</button>
             </form>
         </div>
@@ -75,7 +75,7 @@
             <th>RUC</th>
             <th>Matriz</th>
         </tr>
-        <%arregloPapas.forEach((tienda)=>{%>
+        <%bddTiendas.forEach((tienda)=>{%>
         <tr>
             <td><%=tienda.nombre%></td>
             <td><%=tienda.fechaApertura%></td>
@@ -89,7 +89,7 @@
                     <input id="TiendaId" type="text" name="id" value="<%=tienda.id%>" hidden>
                     <button>Eliminar</button>
                 </form>
-                <a href="/api/producto/gestionar-hijos/<%=tienda.id%>">
+                <a href="/api/producto/gestionar-productos/<%=tienda.id%>">
                     <button>Gestionar Hijos</button>
                 </a>
             </td>

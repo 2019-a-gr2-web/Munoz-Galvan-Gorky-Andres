@@ -5,17 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crear tienda</title>
+    <title>Crear producto</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-        #cabecera{
-            margin-top:30px;
-        }
-    </style>
 </head>
 <body>
 <div class="container">
-    <div class="row" id="cabecera">
+    <div class="row">
         <div class="col-sm-8"></div>
         <div class="col-sm-2">
             <%=nombreUsuario%>
@@ -30,47 +25,55 @@
     <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4">
-            <form action="/api/tienda/registrar-tienda"
+            <form action="/api/producto/registrar-producto"
                   method="post"
             >
                 <div class="row">
+
                     <div class="col-sm-6">
-                        <label for="nombreTienda">Nombre</label>
+                        <label for="numeroProducto">Número de producto</label>
                     </div>
                     <div class="col-sm-6">
-                        <input type="text" name="nombre" id="nombreTienda">
+                        <input type="number" name="numeroProducto" id="numeroProducto">
                     </div>
 
                     <div class="col-sm-6">
-                        <label for="direccionTienda">Direccion</label>
+                        <label for="nombreProducto">Nombre</label>
                     </div>
                     <div class="col-sm-6">
-                        <input type="text" name="direccion" id="direccionTienda">
-                    </div>
-
-                    <div class="col-sm-6">
-                        <label for="fechaApertura">Fecha apertura</label>
-                    </div>
-                    <div class="col-sm-6">
-                        <input type="date" name="fechaApertura" id="fechaApertura">
+                        <input type="text" name="nombre" id="nombreProducto">
                     </div>
 
                     <div class="col-sm-6">
-                        <label for="rucTienda">RUC</label>
+                        <label for="descripcionTienda">Descripción</label>
                     </div>
                     <div class="col-sm-6">
-                        <input type="number" name="RUC" id="rucTienda">
-                    </div>
-
-                    <div class="col-sm-6">
-                        <label for="matrizTienda">Matriz</label>
-                    </div>
-                    <div class="col-sm-6">
-                        <input type="checkbox" name="matriz" id="matrizTienda">
+                        <input type="text" name="descripcion" id="descripcionTienda">
                     </div>
 
                     <div class="col-sm-6">
-                        <a href="/api/tienda/listar-papas" target="_parent">
+                        <label for="precioTienda">Precio</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="number" name="precio"
+                               step="0.1"
+                               id="precioTienda">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="fechaLanzamientoProducto">Fecha de Lanzamiento del producto </label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="date" name="fechaLanzamientoProducto" id="fechaLanzamientoProducto">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="aniosGarantia">Años de garantía</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="number" name="aniosGarantia" id="aniosGarantia">
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="/api/producto/gestionar-productos/<%=tiendaId%>" target="_parent">
                             <button type="button">Cancelar</button>
                         </a>
                     </div>

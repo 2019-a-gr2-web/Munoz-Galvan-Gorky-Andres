@@ -1,85 +1,86 @@
-import {Controller, Get, Post, Request, Res, Response} from "@nestjs/common";
+import {Controller, Get, Post, Req, Res, Response} from "@nestjs/common";
 import {TiendaService} from "./tienda.service";
 import {Body} from "@nestjs/common/decorators/http/route-params.decorator";
 import {Tienda} from "./interfaces/tienda";
+import {AppService} from "../app.service";
 
 @Controller('api/tienda')
 export class TiendaController{
-    constructor(private readonly _tiendaService:TiendaService) {}
+    constructor(private readonly _tiendaService:TiendaService,private readonly _appService:AppService) {}
 
-    revisarCookieSegura(@Request() req):boolean{
-        const cookieSegura = req.signedCookies.nombreUsuario;
-        return !!cookieSegura;
-    }
-
-
-
-    @Get('/gestionar')
-    gestionarPapas(@Request() req,
-                   @Response() res)
-    {
-        const nombreUsuarioRecibido = this._tiendaService.nombreUsuario;
-        const cookieSegura = this.revisarCookieSegura(req);
-        if(cookieSegura){
-            return res.render('tienda/gestionar-papas',{
-                nombreUsuarioParametro:nombreUsuarioRecibido,
+    @Get('crear-tienda')
+    crearTienda(@Response() res,@Req()req){
+        const nombreUsuario = req.signedCookies.nombreUsuario;
+        if(this._appService.revisarCookieSegura(req)){
+            res.render('tienda/crear-tienda',{nombreUsuario
             });
         }else{
-            return res.redirect('/api/home');
+            res.redirect('/api/home');
         }
     }
-    @Get('crear-tienda')
-    crearTienda(@Response() res){
-        const nombreUsuarioRecibido = this._tiendaService.nombreUsuario;
-        res.render('tienda/crear-tienda',{
-                nombreUsuarioParametro:nombreUsuarioRecibido,
-            });
-    }
-    @Get('listar-papas')
-    listarPapas(@Response() res){
-        const nombreUsuarioRecibido = this._tiendaService.nombreUsuario;
+    @Get('listar-tiendas')
+    listarTiendas(@Res() res,@Req() req){
+        const nombreUsuario = req.signedCookies.nombreUsuario;
         const bddTiendas = this._tiendaService.bddTiendas;
-        return res.render('tienda/listar-papas', {
-                nombreUsuarioParametro:nombreUsuarioRecibido,
-                arregloPapas:bddTiendas,
+        if(this._appService.revisarCookieSegura(req)){
+            return res.render('tienda/listar-papas', {
+                nombreUsuario, bddTiendas,
             });
+        }else{
+            res.redirect('/api/home');
+        }
+
     }
     @Post('buscar-tienda')
     postBuscarTienda(
-        @Body() nombreTiendaParametro, @Res() res
+        @Body() nombreTiendaParametro,
+        @Res() res,
+        @Req() req
     ){
-        console.log(nombreTiendaParametro.nombreTienda);
-        const nombreUsuarioRecibido = this._tiendaService.nombreUsuario;
-        const resultadoTiendaBusqueda:Tienda[] = this._tiendaService.buscarPorNombre(nombreTiendaParametro.nombreTienda);
-
-        console.log(resultadoTiendaBusqueda);
-        res.render('tienda/listar-papas',{
-            nombreUsuarioParametro:nombreUsuarioRecibido,
-            arregloPapas:resultadoTiendaBusqueda
-        })
+        const nombreUsuario = req.signedCookies.nombreUsuario;
+        if(this._appService.revisarCookieSegura(req)){
+            const bddTiendas:Tienda[] = this._tiendaService.buscarPorNombre(nombreTiendaParametro.nombreTienda);
+            if(bddTiendas.length>0){
+                res.render('tienda/listar-papas', {
+                    nombreUsuario, bddTiendas,
+                })
+            }else{
+                res.redirect('/api/tienda/listar-tiendas')
+            }
+        }else{
+            res.redirect('/api/home');
+        }
     }
 
     @Post('eliminar')
     postEliminarTienda(
-        @Body() id:number,
-        @Res() res
+        @Body() id,
+        @Res() res,
+        @Req() req
     ){
-        this._tiendaService.eliminarTiendaPorID(id);
-        res.redirect('/api/tienda/listar-papas');
+        if(this._appService.revisarCookieSegura(req)){
+            this._tiendaService.eliminarTiendaPorID(id.id);
+            res.redirect('/api/tienda/listar-tiendas');
+        }else{
+            res.redirect('/api/home')
+        }
+
     }
 
     @Post('registrar-tienda')
     postRegistrarTienda(
         @Body() tienda:Tienda,
-        @Response() res){
-        tienda.RUC = Number(tienda.RUC);
-        tienda.fechaApertura = new Date(tienda.fechaApertura);
-        tienda.matriz = Boolean(tienda.matriz);
-        console.log(tienda);
-
-        this._tiendaService.crearTienda(tienda);
-        res.redirect('/api/tienda/listar-papas');
-
+        @Response() res,
+        @Req() req){
+        if(this._appService.revisarCookieSegura(req)){
+            tienda.RUC = Number(tienda.RUC);
+            tienda.fechaApertura = new Date(tienda.fechaApertura);
+            tienda.matriz = Boolean(tienda.matriz);
+            this._tiendaService.crearTienda(tienda);
+            res.redirect('/api/tienda/listar-tiendas');
+        }else{
+            res.redirect('/api/home')
+        }
     }
 
 }

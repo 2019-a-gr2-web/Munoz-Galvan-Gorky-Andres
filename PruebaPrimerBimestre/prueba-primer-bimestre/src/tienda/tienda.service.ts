@@ -3,7 +3,6 @@ import {Tienda} from "./interfaces/tienda";
 
 @Injectable()
 export class TiendaService{
-    nombreUsuario:string = "";
     bddTiendas:Tienda[]=[];
     recnum = 1;
 
