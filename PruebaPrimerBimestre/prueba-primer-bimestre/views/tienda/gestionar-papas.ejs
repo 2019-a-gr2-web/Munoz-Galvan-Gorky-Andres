@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gestionar Tiendas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        #cabecera{
+            margin-top:30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row" id="cabecera">
+        <div class="col-sm-8"></div>
+        <div class="col-sm-2">
+            <%=nombreUsuario%>
+        </div>
+        <div class="col-sm-2">
+            <form action="/api/login">
+                <button>Salir</button>
+            </form>
+
+        </div>
+        <div class="col-sm-5"></div>
+        <div class="col-sm-2">
+            <form action="/api/tienda/listar-tiendas">
+                <button>Gestionar Tiendas</button>
+            </form>
+        </div>
+        <div class="col-sm-5"></div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crear producto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8"></div>
+        <div class="col-sm-2">
+            <%=nombreUsuario%>
+        </div>
+        <div class="col-sm-2">
+            <form action="/api/home">
+                <button>Salir</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <form action="/api/producto/registrar-producto"
+                  method="post"
+            >
+                <div class="row">
+
+                    <div class="col-sm-6">
+                        <label for="numeroProducto">Número de producto</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="number" name="numeroProducto" id="numeroProducto">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="nombreProducto">Nombre</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" name="nombre" id="nombreProducto">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="descripcionTienda">Descripción</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" name="descripcion" id="descripcionTienda">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="precioTienda">Precio</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="number" name="precio"
+                               step="0.1"
+                               id="precioTienda">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="fechaLanzamientoProducto">Fecha de Lanzamiento del producto </label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="date" name="fechaLanzamientoProducto" id="fechaLanzamientoProducto">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="aniosGarantia">Años de garantía</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="number" name="aniosGarantia" id="aniosGarantia">
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="/api/producto/gestionar-productos/<%=tiendaId%>" target="_parent">
+                            <button type="button">Cancelar</button>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <button>Crear</button>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>
+</body>
+</html>
