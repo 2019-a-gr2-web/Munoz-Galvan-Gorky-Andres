@@ -1,18 +1,37 @@
 import {Injectable} from "@nestjs/common";
 import {Trago} from "./interfaces/trago";
+import {TragosEntity} from "./tragos.entity";
+import {Repository} from "typeorm";
+import {InjectRepository} from "@nestjs/typeorm";
 
 @Injectable()
 export class TragosService {
 
-    constructor(){
+    constructor(@InjectRepository(TragosEntity)
+                private readonly _tragosRepository: Repository<TragosEntity>){
+
         const traguito:Trago={
             nombre:'Pilsener',
             gradosAlcohol:4.3,
             fechaCaducidad: new Date(2019,5,10),
             precio:1.75,
             tipo:'Cerveza'
-        }
+        };
         this.crear(traguito);
+
+        const objetoEntidad = this._tragosRepository.create(traguito);
+        this._tragosRepository
+            .save(objetoEntidad)
+            .then(
+                (datos)=>{
+                    console.log('dato creado:', datos);
+                }
+            )
+            .catch(
+                (error)=>{
+                    console.log('Error:',error);
+                }
+            );
     }
 
     bddTragos:Trago[] = [];
