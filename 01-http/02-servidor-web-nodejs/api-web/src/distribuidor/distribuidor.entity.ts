@@ -10,7 +10,8 @@ export class DistribuidorEntity{
     @Column()
     nombre:string;
 
-    @OneToMany(type=> TragosEntity,trago => trago.distribuidorId)
+    @OneToMany(type=> TragosEntity,
+            trago => trago.distribuidorId)
     tragos: TragosEntity[];
 
 }
