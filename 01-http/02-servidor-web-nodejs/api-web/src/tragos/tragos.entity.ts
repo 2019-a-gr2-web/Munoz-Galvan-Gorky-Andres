@@ -1,4 +1,5 @@
-import {Entity, Column, PrimaryGeneratedColumn} from "typeorm";
+import {Entity, Column, PrimaryGeneratedColumn, ManyToOne} from "typeorm";
+import {DistribuidorEntity} from "../distribuidor/distribuidor.entity";
 
 @Entity('bd_trago') // Nombre de la tabla
 export class TragosEntity{
@@ -6,6 +7,43 @@ export class TragosEntity{
     @PrimaryGeneratedColumn()
     id:number;
 
-    @Column()
-    nombre:string;
+    @Column({
+        type: 'varchar',
+        length: 70,
+        name: 'nombre_trago',
+    })
+    nombre: string;
+
+    @Column({
+        type: 'varchar',
+        length: 10,
+        name: 'tipo_trago',
+    })
+    tipo: 'Ron'|'Vodka'|'Whiskey'|'Tequila'|'Puntas'|'Cerveza';
+
+    @Column({
+        type: 'int',
+        name: 'grados_alcohol',
+    })
+    gradosAlcohol: number;
+
+    @Column({
+        type: 'date',
+        name: 'fecha_caducidad',
+    })
+    fechaCaducidad: Date;
+
+    @Column({
+        type: 'decimal',
+        precision: 10,
+        scale:2,
+        name: 'precio',
+    })
+    precio: number;
+
+
+
+    @ManyToOne(type => DistribuidorEntity,
+            distribuidor=>distribuidor.tragos)
+    distribuidorId: DistribuidorEntity;
 }
