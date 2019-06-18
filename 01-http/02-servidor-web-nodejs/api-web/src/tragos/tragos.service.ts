@@ -37,12 +37,20 @@ export class TragosService {
     bddTragos:Trago[] = [];
     recnum = 1;
 
-    crear(nuevoTrago:Trago):Trago{
-        nuevoTrago.id = this.recnum;
+    crear(nuevoTrago:Trago):Promise<TragosEntity>{
+        /*nuevoTrago.id = this.recnum;
         this.recnum++;
         this.bddTragos.push(nuevoTrago);
-        return nuevoTrago;
+        return nuevoTrago;*/
+        const objetoEntidad = this._tragosRepository.create(nuevoTrago); //Crea una nueva instancia de la entidad
+        return this._tragosRepository.save(objetoEntidad);
+
     }
+
+    buscar(parametrosBusqueda?):Promise<TragosEntity[]>{
+        return this._tragosRepository.find(parametrosBusqueda);
+    }
+
     buscarPorID(id:number):Trago{
         return this.bddTragos.find(
             (trago)=>{
