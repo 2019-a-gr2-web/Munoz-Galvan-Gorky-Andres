@@ -8,10 +8,13 @@ import {FiestaEntity} from "./fiesta/fiesta.entity";
 import {DistribuidorEntity} from "./distribuidor/distribuidor.entity";
 import {DistribuidorModule} from "./distribuidor/distribuidor.module";
 import {FiestaModule} from "./fiesta/fiesta.module";
+import {ChatModule} from "./chat/chat.module";
 
 @Module({
-  imports: [TragosModule,DistribuidorModule,FiestaModule,
-    TypeOrmModule.forRoot({
+  imports: [
+      ChatModule
+      //TragosModule,DistribuidorModule,FiestaModule,
+    /*TypeOrmModule.forRoot({
       name: 'default', // Nombre de cadena de conexión
       type: 'mysql',
       host: 'localhost',
@@ -26,7 +29,7 @@ import {FiestaModule} from "./fiesta/fiesta.module";
       ],
       synchronize: true,
       dropSchema:false
-    }),
+    }),*/
   ], //Aquí se ponen los módulos
   controllers: [AppController],
   providers: [AppService],
