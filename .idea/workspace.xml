@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90adf8ad-339a-4f9c-8e7a-96a175b607b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/login.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/protegida.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/main.ts" afterDir="false" />
-    </list>
+    <list default="true" id="90adf8ad-339a-4f9c-8e7a-96a175b607b6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -24,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.controller.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+            <state relative-caret-position="147">
+              <caret line="49" selection-start-line="49" selection-end-line="50" />
               <folding>
                 <element signature="e#0#114#0" expanded="true" />
                 <element signature="e#2270#2350#0" />
@@ -258,18 +250,17 @@
       <workItem from="1560369307460" duration="3228000" />
       <workItem from="1560890834338" duration="4462000" />
       <workItem from="1560975983619" duration="5562000" />
-      <workItem from="1561493444711" duration="3737000" />
+      <workItem from="1561493444711" duration="3971000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184064000" />
+    <option name="totallyTimeSpent" value="184298000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23660715" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23660715" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -282,7 +273,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32991454" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.32991454" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49776787" visible="true" weight="0.31623933" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49776787" visible="true" weight="0.31623933" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5014881" side_tool="true" weight="0.32991454" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -699,8 +690,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.controller.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+        <state relative-caret-position="147">
+          <caret line="49" selection-start-line="49" selection-end-line="50" />
           <folding>
             <element signature="e#0#114#0" expanded="true" />
             <element signature="e#2270#2350#0" />
