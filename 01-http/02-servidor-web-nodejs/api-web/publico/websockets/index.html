@@ -3,8 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
 </head>
 <body>
+
+
+<h1 id="titulo">CHAT EPN</h1>
+
+<p class="par">Primero</p>
+<p class="par">Segundo</p>
+
+<div id="contenedor-chat">
+
+    <label for="chat-texto">Texto</label>
+    <input id="chat-texto" type="text">
+
+
+    <button onclick="enviarMensaje()">Añadir chat</button>
+
+</div>
+
+<script>
+
+    function enviarMensaje() {
+        const textoEscrito = document.getElementById("chat-texto");
+        const texto = textoEscrito.value;
+        console.log(texto);
+
+        const idContenedor = 'contenedor-chat';
+        const nombreEtiquetaHTMLChat = "p";
+        const parrafo = document
+            .createElement(nombreEtiquetaHTMLChat);
+
+        const contenidoHTML = `
+         <div class="alert alert-primary text-right" role="alert">
+            ${texto}
+        </div>`;
+        parrafo.innerHTML = contenidoHTML;
+        anadirEtiqueta(idContenedor, parrafo);
+        peticionHolaMundo(texto);
+
+        textoEscrito.value = "";
+        textoEscrito.focus();
+    }
+
+    function anadirEtiqueta(idEtiqueta, elementoHTML) {
+        const etiqueta = document.getElementById(idEtiqueta);
+        etiqueta.appendChild(elementoHTML);
+    }
+
+
+
+    const titulo = document.getElementById("titulo");
+    titulo.style.backgroundColor = "green";
+    titulo.onclick = ()=>{
+        console.log("Diste click al título");
+    };
+
+</script>
 
 <!-- <script src="/websockets/socket.io.js"></script> -->
 <script src="socket.io.js"></script>
@@ -24,7 +83,20 @@
     socket.on(
         'saludaron',
         (data)=>{
-            console.log('Nos saludaron.',data)
+            console.log('Nos saludaron.',data);
+
+            const nombreContenedor = 'contenedor-chat';
+            const idContenedor = document.getElementById(nombreContenedor);
+            const etiqueta = "p";
+            const parrafo = document
+                .createElement(etiqueta);
+
+            const contenidoHTML = `
+             <div class="alert alert-secondary" role="alert">
+                ${data.nombre}
+             </div>`;
+            parrafo.innerHTML = contenidoHTML;
+            anadirEtiqueta(nombreContenedor,parrafo);
 
         }
     );
@@ -35,10 +107,10 @@
         }
     );*/
 
-    function peticionHolaMundo() {
+    function peticionHolaMundo(texto) {
         const nombreMetodo = 'holaMundo';
         const datos ={
-            nombre:'Gorky'
+            nombre:texto
         };
         socket.emit(
             nombreMetodo,
