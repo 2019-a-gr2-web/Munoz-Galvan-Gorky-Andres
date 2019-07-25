@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90adf8ad-339a-4f9c-8e7a-96a175b607b6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/listar-compras.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/menu-pedido.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/despachador/despachador.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/despachador/despachador.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/interfaces/pedido.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/interfaces/pedido.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.entity.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/despachar.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/despachar.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/usuario/usuario.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/usuario/usuario.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/despachar.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/despachador/despachar.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/pedido.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/pedido.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,32 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/despachar.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="97" column="36" lean-forward="true" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/despachador/despachador.controller.ts">
+        <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/menu-pedido.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.controller.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="102">
+              <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -57,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            <state relative-caret-position="221">
+              <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -66,29 +47,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/pedido.ejs">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.controller.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+            <state relative-caret-position="306">
+              <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/usuario/usuario.controller.ts">
+        <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/pedido.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/publico/websockets/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="46" />
+            <state relative-caret-position="153">
+              <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -108,11 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ProyectoIndividual/proyecto-individual/src/Producto/producto.entity.ts" />
-        <option value="$PROJECT_DIR$/ProyectoIndividual/proyecto-individual/src/Promocion/promocion.entity.ts" />
-        <option value="$PROJECT_DIR$/ProyectoIndividual/proyecto-individual/src/ProductoPromocion/producto.promocion.entity.ts" />
-        <option value="$PROJECT_DIR$/ProyectoIndividual/proyecto-individual/src/app.module.ts" />
-        <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/publico/websockets/index.html" />
         <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.controller.ts" />
         <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/archivo.ejs" />
         <option value="$PROJECT_DIR$/deberes/websocket/src/mayorNumero/mayornumero.gateway.ts" />
@@ -147,18 +114,23 @@
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.gateway.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/actor/actor.controller.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/actor/actor.module.ts" />
-        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/app.module.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.module.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/despachador/despachador.module.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/app.controller.ts" />
-        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/usuario/usuario.controller.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/pedido.ejs" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/interfaces/pedido.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.entity.ts" />
-        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.service.ts" />
-        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/despachador/despachador.controller.ts" />
-        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.controller.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/despachar.ejs" />
+        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/app.module.ts" />
+        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/menu-pedido.ejs" />
+        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/listar-compras.ejs" />
+        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/menu-pedido.ejs" />
+        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.controller.ts" />
+        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/usuario/usuario.controller.ts" />
+        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.service.ts" />
+        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/despachador/despachar.ejs" />
+        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/despachador/despachador.controller.ts" />
+        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/pedido.ejs" />
       </list>
     </option>
   </component>
@@ -227,15 +199,6 @@
               <item name="PruebaSegundoBimestre" type="462c0819:PsiDirectoryNode" />
               <item name="prueba-segundo-bimestre" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pedido" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-Munoz-Galvan-Gorky-Andres" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
-              <item name="PruebaSegundoBimestre" type="462c0819:PsiDirectoryNode" />
-              <item name="prueba-segundo-bimestre" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="usuario" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -244,6 +207,14 @@
               <item name="PruebaSegundoBimestre" type="462c0819:PsiDirectoryNode" />
               <item name="prueba-segundo-bimestre" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web-Munoz-Galvan-Gorky-Andres" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web-Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
+              <item name="PruebaSegundoBimestre" type="462c0819:PsiDirectoryNode" />
+              <item name="prueba-segundo-bimestre" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="usuario" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -261,18 +232,18 @@
     <property name="ts.external.directory.path" value="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\ProyectoIndividual\proyecto-individual\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\PruebaSegundoBimestre\prueba-segundo-bimestre\views\usuario" />
+      <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\PruebaSegundoBimestre\prueba-segundo-bimestre\views\despachador" />
+      <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\PruebaSegundoBimestre\prueba-segundo-bimestre\publico" />
+      <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\PruebaSegundoBimestre\prueba-segundo-bimestre\src\pedido\websocket" />
+      <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\01-http\02-servidor-web-nodejs\api-web\src\distribuidor" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\PruebaSegundoBimestre\prueba-segundo-bimestre\publico" />
       <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\deberes\deber-websockets\src" />
       <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\deberes\deber-websockets" />
       <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\deberes\websocket\publico\websocket" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\PruebaSegundoBimestre\prueba-segundo-bimestre\publico" />
-      <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\PruebaSegundoBimestre\prueba-segundo-bimestre\src\pedido\websocket" />
-      <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\01-http\02-servidor-web-nodejs\api-web\src\distribuidor" />
-      <recent name="C:\Users\Gorky\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\PruebaPrimerBimestre\prueba-primer-bimestre\src\producto" />
-      <recent name="C:\Users\Gorky\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\PruebaPrimerBimestre\prueba-primer-bimestre\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -350,18 +321,19 @@
       <workItem from="1563985116426" duration="19399000" />
       <workItem from="1564028499837" duration="41000" />
       <workItem from="1564028649737" duration="13878000" />
-      <workItem from="1564070619613" duration="6805000" />
+      <workItem from="1564070619613" duration="7232000" />
+      <workItem from="1564083798906" duration="4712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262734000" />
+    <option name="totallyTimeSpent" value="267873000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987775" visible="true" weight="0.22395833" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987775" visible="true" weight="0.22395833" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5012225" side_tool="true" weight="0.21502976" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -374,7 +346,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32991454" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.32991454" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49776787" visible="true" weight="0.27008548" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49776787" visible="true" weight="0.15384616" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50223213" side_tool="true" weight="0.26324788" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -385,21 +357,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/app.service.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/despachador/login.service.ts" />
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/despachador/login.module.ts" />
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.entity.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PruebaPrimerBimestre/prueba-primer-bimestre/src/producto/producto.controller.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -645,16 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/usuario/usuario.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -669,16 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
           <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/despachador/despachador.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -705,31 +642,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/usuario/usuario.controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PruebaPrimerBimestre/prueba-primer-bimestre/views/producto/listar-productos.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="94" column="17" lean-forward="true" selection-start-line="87" selection-start-column="12" selection-end-line="94" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/publico/websockets/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/pedido.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -747,37 +663,103 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/publico/websockets/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/listar-compras.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/usuario/usuario.controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="29" column="66" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/dist/pedido/pedido.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/dist/despachador/despachador.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="44" column="67" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/despachador/despachar.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="44" column="80" selection-start-line="44" selection-start-column="80" selection-end-line="44" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/despachador/despachador.controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/despachador/despachador.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        <state relative-caret-position="221">
+          <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/pedido.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/menu-pedido.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.controller.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/despachador/despachador.controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/despachar.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="97" column="36" lean-forward="true" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
+        <state relative-caret-position="306">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
         </state>
       </provider>
     </entry>

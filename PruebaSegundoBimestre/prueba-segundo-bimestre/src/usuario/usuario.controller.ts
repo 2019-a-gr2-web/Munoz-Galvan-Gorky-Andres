@@ -21,14 +21,14 @@ export class UsuarioController {
             value => value.nombreUsuario==usuario.nombreUsuario
         );
         if(respuestaUsuario.length>0){
+            session.username = usuario.nombreUsuario;
             if(valor.tipoUsuario=="Admin"){
-                res.render();
+                res.redirect('admin/');
             }else if(valor.tipoUsuario=="Usuario"){
-                res.render('pedido');
+                res.redirect('/api/pedido/menu-pedido');
             }else{
                 res.redirect('/api/despachador/consultar-pedidos');
             }
-            session.username = usuario.nombreUsuario;
         }else{
             res.redirect("/api/login");
         }

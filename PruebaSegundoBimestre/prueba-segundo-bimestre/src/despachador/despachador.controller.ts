@@ -13,17 +13,16 @@ export class DespachadorController {
         const pedidosPorDespachar = respuestaConsultar.filter((pedido)=>{
             return pedido.estadoPedido === 'Por despachar'
         });
-        console.log(respuestaConsultar);
-        console.log(pedidosPorDespachar);
-        res.render('despachar',{
-            pedidos:respuestaConsultar
+
+        res.render('despachador/despachar',{
+            pedidos:pedidosPorDespachar
         });
     }
 
     @Post('despachar-pedido')
     async postDespacharPedido(@Body() body, @Res() res){
                 const idPedido = body.idPedido;
-                const respuesta:Pedido[] = await this._PedidoService.modificarPedido(idPedido);
+                await this._PedidoService.modificarPedido(idPedido);
                 res.redirect('/api/despachador/consultar-pedidos');
                 /*res.render('despachar',{
                     pedidos:respuesta
