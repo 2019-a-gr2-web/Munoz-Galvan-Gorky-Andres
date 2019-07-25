@@ -12,12 +12,9 @@ export class PedidoGateway {
         console.log(this.server)
     }
 
-    @SubscribeMessage('holaMundo')
+    @SubscribeMessage('realizoPedido')
     findAll(client:Client | any,data:any){
-        console.log(data);
-        console.log('Nos hacen la petición');
-        console.log(this.server);
-        client.broadcast.emit('jugar',data);
+        client.broadcast.emit('comprado',data);
         return 'Hola '+ data.nombre;
     }
 

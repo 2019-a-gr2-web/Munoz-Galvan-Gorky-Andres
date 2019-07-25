@@ -10,10 +10,15 @@ import {PeliculaEntity} from "./pelicula/pelicula.entity";
 import {UsuarioEntity} from "./usuario/usuario.entity";
 import {PedidoEntity} from "./pedido/pedido.entity";
 import {PedidoModule} from "./pedido/pedido.module";
+import {DespachadorModule} from "./despachador/despachador.module";
 
 @Module({
   imports: [
-      UsuarioModule, PeliculaModule, ActorModule,PedidoModule,
+      UsuarioModule,
+      PeliculaModule,
+      ActorModule,
+      PedidoModule,
+      DespachadorModule,
     TypeOrmModule.forRoot({
       name: 'default', // Nombre de cadena de conexión
       type: 'mysql',

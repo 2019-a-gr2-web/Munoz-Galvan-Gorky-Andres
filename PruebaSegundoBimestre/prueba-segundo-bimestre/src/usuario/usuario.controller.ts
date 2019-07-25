@@ -1,4 +1,4 @@
-import {Body, Controller, Post, Res, Session} from "@nestjs/common";
+import {Body, Controller, Get, Post, Res, Session} from "@nestjs/common";
 import {Usuario} from "./interfaces/usuario";
 import {UsuarioService} from "./usuario.service";
 
@@ -6,8 +6,8 @@ import {UsuarioService} from "./usuario.service";
 export class UsuarioController {
 
     constructor(private readonly _UsuarioService:UsuarioService){
-
     }
+
     @Post('autenticando')
     async postAutenticar(@Body() body,
                          @Session() session,
@@ -26,14 +26,12 @@ export class UsuarioController {
             }else if(valor.tipoUsuario=="Usuario"){
                 res.render('pedido');
             }else{
-                res.render();
+                res.redirect('/api/despachador/consultar-pedidos');
             }
             session.username = usuario.nombreUsuario;
         }else{
-            const mensaje = "credenciales incorrectas";
             res.redirect("/api/login");
-            /*res.status(500);
-            res.send({mensaje: mensaje, codigo: 500});*/
         }
     }
+
 }

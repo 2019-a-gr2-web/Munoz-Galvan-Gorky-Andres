@@ -6,11 +6,11 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Solicitar Pedido</title>
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossorigin="anonymous">
-    <script src='/socket.io.js' type='text/javascript'></script>
+
+    <script src='/socket.io.js' type=<link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">'text/javascript'></script>
 </head>
 <body>
 <div class="row">
@@ -22,7 +22,8 @@
         <div class="card">
             <div class="card-body">
                 <h2 class="card-title text-center">Realiza una compra</h2>
-                <form>
+                <form action="/api/pedido/nueva-compra"
+                      method="post">
 
                     <div class="col-sm-3">
 
@@ -61,12 +62,11 @@
                                    id="telefonoUsuario"
                                    placeholder="Ingrese su teléfono">
                         </div>
-                        <button type="submit" class="btn btn-outline-success btn-block">Comprar</button>
+                        <button type="submit" class="btn btn-outline-success btn-block" onclick="pedidoComprado()">Comprar</button>
                     </div>
                     <div class="col-sm-6">
                         <select class="form-control form-control-sm">
                         </select>
-
                     </div>
                 </form>
             </div>
@@ -84,10 +84,43 @@
         'connect', //nombre del evento
         ()=>{
             console.log('Estamos conectados');
-            //socket.disconnect();
-            //socket.connect()
         }
     );
+    socket.on(
+        'comprado',
+        ()=>{
+            console.log('Compró');
+        }
+    )
+
+
+    function pedidoComprado() {
+        const nombreUsuario = document.getElementById("nombreUsuario").value;
+        const ciUsuario = document.getElementById("ciUsuario").value;
+        const direccionUsuario = document.getElementById("direccionUsuario").value;
+        const telefonoUsuario = document.getElementById("telefonoUsuario").value;
+
+
+        const nombreMetodo = 'realizoPedido';
+        const datos ={
+            nombreUsuario:nombreUsuario,
+            ciUsuario:ciUsuario,
+            direccionUsuario:direccionUsuario,
+            telefonoUsuario:telefonoUsuario,
+            totalSinImpuesto: 12.3,
+            totalConImpuesto: 10.1,
+            estadoPedido:'Por despachar'
+
+        };
+        socket.emit(
+            nombreMetodo,
+            datos,
+            (respuesta)=>{
+                console.log(respuesta)
+            }
+        );
+    }
+
 </script>
 <script>
     function enviar() {

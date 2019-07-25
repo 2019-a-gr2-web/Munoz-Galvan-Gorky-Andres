@@ -23,7 +23,7 @@ export class AppController {
               override:true
           }
       );
-      return res.redirect('/api/login');
+      return res.redirect('/api/despachador');
   }
 
   @Get('login')

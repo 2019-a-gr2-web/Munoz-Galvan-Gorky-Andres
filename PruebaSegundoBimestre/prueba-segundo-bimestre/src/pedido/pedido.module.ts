@@ -2,6 +2,8 @@ import {Module} from "@nestjs/common";
 import {TypeOrmModule} from "@nestjs/typeorm";
 import {PedidoEntity} from "./pedido.entity";
 import {PedidoGateway} from "./pedido.gateway";
+import {PedidoService} from "./pedido.service";
+import {PedidoController} from "./pedido.controller";
 
 @Module({
     imports:[
@@ -10,9 +12,9 @@ import {PedidoGateway} from "./pedido.gateway";
         ],'default')
 
     ],
-    controllers:[],
-    providers:[PedidoGateway],
-    exports:[]
+    controllers:[PedidoController],
+    providers:[PedidoService,PedidoGateway],
+    exports:[PedidoService]
 })
 export class PedidoModule {
 }

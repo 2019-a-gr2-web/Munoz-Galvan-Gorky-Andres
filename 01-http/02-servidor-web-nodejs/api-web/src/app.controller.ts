@@ -88,7 +88,7 @@ export class AppController {
          @Session() session){
       session.username = undefined;
       session.destroy();
-      res.redirect('/api/login');
+      res.redirect('/api/despachador');
   }
 
   @Get('login')
@@ -106,7 +106,7 @@ export class AppController {
           res.redirect('/api/protegida');
       }else{
           res.status(400);
-          res.send({mensaje:'Error login',error:400})
+          res.send({mensaje:'Error despachador',error:400})
       }
   }
 
@@ -120,7 +120,7 @@ export class AppController {
               nombre:session.username
           });
       }else{
-          res.redirect('/api/login');
+          res.redirect('/api/despachador');
       }
   }
 

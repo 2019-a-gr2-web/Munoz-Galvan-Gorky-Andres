@@ -4,6 +4,7 @@ import {PedidoEntity} from "./pedido.entity";
 import {InjectRepository} from "@nestjs/typeorm";
 import {Pedido} from "./interfaces/pedido";
 
+
 @Injectable()
 export class PedidoService {
 
@@ -11,10 +12,13 @@ export class PedidoService {
                 private readonly _pedidosRepository: Repository<PedidoEntity>){
     }
 
-    nuevoPedido:Pedido;
 
     crearPedido(nuevoPedido:Pedido):Promise<PedidoEntity>{
         const objetoEntidad = this._pedidosRepository.create(nuevoPedido); //Crea una nueva instancia de la entidad
         return this._pedidosRepository.save(objetoEntidad);
     }
-}
+
+    consultarTodosPedidos():Promise<PedidoEntity[]>{
+        return this._pedidosRepository.find();
+    }
+    }
