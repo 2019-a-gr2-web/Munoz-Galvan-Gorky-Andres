@@ -26,8 +26,8 @@
             <div class="card-body">
                 <h2 class="card-title text-center">Despacha pedidos</h2>
 
-                    <table class="table table-striped">
-                            <th>Número de pedido</th>
+                    <table class="table table-striped" id="tableRow">
+                            <th>Nombre comprados</th>
                             <th>Total</th>
                             <th></th>
                             <th></th>
@@ -36,7 +36,6 @@
                         <tr>
                             <td><%=pedido.nombreUsuario%></td>
                             <td><%=pedido.totalConImpuesto%></td>
-                            <td><%=pedido.totalSinImpuesto%></td>
                         </tr>
                         <%})%>
                     </table>
@@ -64,9 +63,27 @@
     socket.on(
         'comprado',
         (pedido)=>{
-            console.log(pedido);
+            const tableRow = 'tableRow';
+            const idContenedor = document.getElementById(tableRow);
+            const etiqueta = 'tr';
+            const linea = document.createElement(etiqueta);
+            const contenidoHTML = `
+             <td>
+                ${pedido.nombreUsuario}
+             </td>
+             <td>
+                ${pedido.totalConImpuesto}
+             </td>
+`;
+            linea.innerHTML = contenidoHTML;
+            anadirEtiqueta(idContenedor, linea);
         }
     )
+
+    function anadirEtiqueta(idEtiqueta, elementoHTML) {
+        const etiqueta = document.getElementById('tableRow');
+        etiqueta.appendChild(elementoHTML);
+    }
 </script>
 
 </body>

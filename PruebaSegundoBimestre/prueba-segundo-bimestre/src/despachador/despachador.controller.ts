@@ -1,5 +1,6 @@
 import {Controller, Get, Res} from "@nestjs/common";
 import {PedidoService} from "../pedido/pedido.service";
+import {Pedido} from "../pedido/interfaces/pedido";
 
 @Controller('api/despachador')
 export class DespachadorController {
@@ -8,10 +9,11 @@ export class DespachadorController {
 
     @Get('consultar-pedidos')
     async getConsultarPedidos(@Res() res){
-        const respuestaConsultar = await this._PedidoService.consultarTodosPedidos();
+        const respuestaConsultar: Pedido[] = await this._PedidoService.consultarTodosPedidos();
         const pedidosPorDespachar = respuestaConsultar.filter((pedido)=>{
-            pedido.estadoPedido == 'Por despachar'
+            return pedido.estadoPedido === 'Por despachar'
         });
+        console.log(respuestaConsultar);
         console.log(pedidosPorDespachar);
         res.render('despachar',{
             pedidos:pedidosPorDespachar
