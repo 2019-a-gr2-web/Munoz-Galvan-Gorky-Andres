@@ -1,5 +1,5 @@
 export interface Pedido {
-    ipPedido?:number;
+    idPedido?:number;
     nombreUsuario:string;
     direccionUsuario:string;
     telefonoUsuario:string;

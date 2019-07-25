@@ -27,15 +27,26 @@
                 <h2 class="card-title text-center">Despacha pedidos</h2>
 
                     <table class="table table-striped" id="tableRow">
-                            <th>Nombre comprados</th>
+                            <th>Nombre comprador</th>
+                            <th>Estado</th>
                             <th>Total</th>
-                            <th></th>
                             <th></th>
                         </tr>
                         <%pedidos.forEach((pedido)=>{%>
                         <tr>
                             <td><%=pedido.nombreUsuario%></td>
+                            <td><%=pedido.estadoPedido%></td>
                             <td><%=pedido.totalConImpuesto%></td>
+                            <%if(pedido.estadoPedido==='Por despachar'){%>
+                            <td>
+                                <form action="/api/despachador/despachar-pedido"
+                                      method="post">
+                                    <label for="idPedido"></label>
+                                    <input id="idPedido" type="text" name="id" value="<%=pedido.idPedido%>" hidden>
+                                    <button>Despachar</button>
+                                </form>
+                            </td>
+                            <%}%>
                         </tr>
                         <%})%>
                     </table>
@@ -64,7 +75,7 @@
         'comprado',
         (pedido)=>{
             const tableRow = 'tableRow';
-            const idContenedor = document.getElementById(tableRow);
+            const contenedor = document.getElementById(tableRow);
             const etiqueta = 'tr';
             const linea = document.createElement(etiqueta);
             const contenidoHTML = `
@@ -72,17 +83,19 @@
                 ${pedido.nombreUsuario}
              </td>
              <td>
+                ${pedido.estadoPedido}
+             </td>
+             <td>
                 ${pedido.totalConImpuesto}
              </td>
 `;
             linea.innerHTML = contenidoHTML;
-            anadirEtiqueta(idContenedor, linea);
+            anadirEtiqueta(contenedor, linea);
         }
     )
 
-    function anadirEtiqueta(idEtiqueta, elementoHTML) {
-        const etiqueta = document.getElementById('tableRow');
-        etiqueta.appendChild(elementoHTML);
+    function anadirEtiqueta(contenedor, elementoHTML) {
+        contenedor.appendChild(elementoHTML);
     }
 </script>
 

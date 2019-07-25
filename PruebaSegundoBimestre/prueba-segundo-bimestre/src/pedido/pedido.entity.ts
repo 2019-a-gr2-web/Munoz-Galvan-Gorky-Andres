@@ -4,7 +4,7 @@ import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
 export class PedidoEntity {
 
     @PrimaryGeneratedColumn()
-    ipPedido:number;
+    idPedido:number;
 
     @Column({
         type:'varchar',

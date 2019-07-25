@@ -21,4 +21,12 @@ export class PedidoService {
     consultarTodosPedidos():Promise<PedidoEntity[]>{
         return this._pedidosRepository.find();
     }
+
+    async modificarPedido(idPedido:number):Promise<PedidoEntity[]>{
+
+        const objetoEntidad = await this._pedidosRepository.findOne(idPedido);
+        objetoEntidad.estadoPedido = 'Despachado';
+        this._pedidosRepository.save(objetoEntidad);
+        return this._pedidosRepository.find();
     }
+}
