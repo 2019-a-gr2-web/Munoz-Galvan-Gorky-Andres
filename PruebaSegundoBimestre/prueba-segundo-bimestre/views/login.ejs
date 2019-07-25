@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+
+    <style>
+        .separador{
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="separador"></div>
+<div class="row">
+
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title text-center">Login</h2>
+                <form action="/api/usuario/autenticando"
+                      method="post"
+                >
+                    <div class="form-group">
+                        <label for="nombreUsuario">Usuario</label>
+                        <input type="text"
+                               class="form-control"
+                               id="nombreUsuario"
+                               name="nombreUsuario"
+                               aria-describedby="emailHelp" placeholder="Ingrese su nombre de usuario">
+                    </div>
+                    <div class="form-group">
+                        <label for="passUsuario">Contraseña</label>
+                        <input type="password" class="form-control" id="passUsuario"
+                               name="passUsuario"
+                               placeholder="Ingrese su contraseña">
+                    </div>
+                    <button type="submit" class="btn btn-outline-success btn-block">Iniciar sesión</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4"></div>
+</div>
+
+</body>
+</html>

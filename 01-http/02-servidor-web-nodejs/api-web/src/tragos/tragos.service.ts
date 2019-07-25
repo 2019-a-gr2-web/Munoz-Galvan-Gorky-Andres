@@ -44,7 +44,6 @@ export class TragosService {
         return nuevoTrago;*/
         const objetoEntidad = this._tragosRepository.create(nuevoTrago); //Crea una nueva instancia de la entidad
         return this._tragosRepository.save(objetoEntidad);
-
     }
 
     buscar(parametrosBusqueda?):Promise<TragosEntity[]>{

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mayor número</title>
+</head>
+<body>
+
+
+    <h1 id="titulo">
+        MAYOR NÚMERO
+    </h1>
+
+    <button onclick="jugar()">Jugar</button>
+
+    <script src="/websocket/socket.io.js"></script>
+    <script>
+        const url = 'http://localhost:3001/websockets';
+        const socket = io(url);
+        socket.on('connect',
+            ()=>{
+            console.log("Conectado");
+            });
+        socket.on(
+            'saludaron',
+            (data)=> {
+                console.log('Nos saludaron.', data);
+
+            });
+    </script>
+
+<script>
+    function jugar() {
+
+
+    }
+</script>
+
+</body>
+</html>

@@ -1,11 +1,11 @@
+// ws://localhost:3001/websockets
 import {SubscribeMessage, WebSocketGateway, WebSocketServer} from "@nestjs/websockets";
 import {Client} from "socket.io";
 
-// ws://localhost:3001/websockets
 @WebSocketGateway(3001,{
     namespace:'/websockets'
 })
-export class ChatGateway{
+export class PedidoGateway {
 
     @WebSocketServer() server;
     constructor(){
@@ -20,4 +20,5 @@ export class ChatGateway{
         client.broadcast.emit('jugar',data);
         return 'Hola '+ data.nombre;
     }
+
 }
