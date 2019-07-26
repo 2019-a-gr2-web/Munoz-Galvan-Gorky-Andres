@@ -29,8 +29,7 @@
 <body>
 
 <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10">
+    <div class="col-sm-12">
         <div class="separador"></div>
         <div class="card">
             <div class="card-body">
@@ -38,12 +37,19 @@
 
                 <div class="row">
                     <div class="col-sm-6">
-                        <form action=""
-                        method="post">
+                        <form action="/api/pelicula/buscar-pelicula">
                             <div class="form-group">
                                 <label for="buscarPelicula">Buscar películas</label>
-                                <input type="text" class="form-control" id="buscarPelicula" placeholder="Busque por nombre o año de lanzamiento">
+                                <input type="text" class="form-control" id="buscarPelicula"
+                                       name="buscarPelicula"
+                                       placeholder="Busque por nombre o año de lanzamiento">
                             </div>
+                            <label for="idActor"></label>
+                            <input type="text"
+                                   name="idActor"
+                                   id="idActor"
+                                   value="<%=idActor%>"
+                                   hidden>
                             <button type="submit" class="btn btn-outline-success">Buscar</button>
                         </form>
                     </div>
@@ -95,9 +101,27 @@
                             name="anioLazamientoPelicula"
                             id="anioLazamientoPelicula">
                         </td>
-                        <td><%=pelicula.precioPelicula%></td>
-                        <td><%=pelicula.sinopsisPelicula%></td>
-                        <td><%=pelicula.ratingPelicula%></td>
+                        <td>
+                            <label for="precioPelicula"></label>
+                            <input type="text"
+                            value="<%=pelicula.precioPelicula%>"
+                            name="precioPelicula"
+                            id="precioPelicula">
+                        </td>
+                        <td>
+                            <textarea name="sinopsisPelicula" id="sinopsisPelicula" rows="3"><%=pelicula.sinopsisPelicula%></textarea>
+                        </td>
+                        <td>
+                            <input type="text"
+                            value="<%=pelicula.ratingPelicula%>"
+                            name="ratingPelicula">
+                        </td>
+                        <td>
+                            <input type="text"
+                            value="<%=idActor%>"
+                                   name="actor"
+                            hidden>
+                        </td>
                         <td>
                             <button type="submit" class="btn btn-outline-success">Editar</button>
                             <a href="/api/pelicula/eliminar-pelicula/<%=idActor%>/<%=pelicula.idPelicula%>">
@@ -113,7 +137,6 @@
         </div>
 
     </div>
-    <div class="col-sm-1"></div>
 </div>
 </body>
 </html>
