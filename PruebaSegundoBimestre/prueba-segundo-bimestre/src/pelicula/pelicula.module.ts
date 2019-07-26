@@ -1,6 +1,8 @@
 import {Module} from "@nestjs/common";
 import {PeliculaEntity} from "./pelicula.entity";
 import {TypeOrmModule} from "@nestjs/typeorm";
+import {PeliculaController} from "./pelicula.controller";
+import {PeliculaService} from "./pelicula.service";
 
 
 @Module({
@@ -11,12 +13,10 @@ import {TypeOrmModule} from "@nestjs/typeorm";
             ],
             'default'
         )
-
     ],
-    controllers:[],
-    providers:[],
-    exports:[],
+    controllers:[PeliculaController],
+    providers:[PeliculaService],
+    exports:[PeliculaService],
 })
 export class PeliculaModule {
-
 }

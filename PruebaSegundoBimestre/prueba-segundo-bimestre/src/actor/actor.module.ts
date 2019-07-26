@@ -2,6 +2,7 @@ import {Module} from "@nestjs/common";
 import {TypeOrmModule} from "@nestjs/typeorm";
 import {ActorEntity} from "./actor.entity";
 import {ActorController} from "./actor.controller";
+import {ActorService} from "./actor.service";
 
 @Module({
     imports:[
@@ -13,8 +14,8 @@ import {ActorController} from "./actor.controller";
         )
     ],
     controllers:[ActorController],
-    providers:[],
-    exports:[],
+    providers:[ActorService],
+    exports:[ActorService],
 })
 export class ActorModule {
 

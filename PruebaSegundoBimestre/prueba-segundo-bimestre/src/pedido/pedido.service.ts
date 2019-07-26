@@ -19,14 +19,13 @@ export class PedidoService {
     }
 
     consultarTodosPedidos():Promise<PedidoEntity[]>{
-        return this._pedidosRepository.find();
+        return this._pedidosRepository.find({where:{estadoPedido:'Por despachar'}});
     }
 
     async modificarPedido(idPedido:number):Promise<PedidoEntity[]>{
         const objetoEntidad = await this._pedidosRepository.findOne(idPedido);
         objetoEntidad.estadoPedido = 'Despachado';
         this._pedidosRepository.save(objetoEntidad);
-        console.log('asd');
         return this._pedidosRepository.find();
     }
 }

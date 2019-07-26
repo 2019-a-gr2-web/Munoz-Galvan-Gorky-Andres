@@ -10,12 +10,9 @@ export class DespachadorController {
     @Get('consultar-pedidos')
     async getConsultarPedidos(@Res() res){
         const respuestaConsultar: Pedido[] = await this._PedidoService.consultarTodosPedidos();
-        const pedidosPorDespachar = respuestaConsultar.filter((pedido)=>{
-            return pedido.estadoPedido === 'Por despachar'
-        });
 
         res.render('despachador/despachar',{
-            pedidos:pedidosPorDespachar
+            pedidos:respuestaConsultar
         });
     }
 

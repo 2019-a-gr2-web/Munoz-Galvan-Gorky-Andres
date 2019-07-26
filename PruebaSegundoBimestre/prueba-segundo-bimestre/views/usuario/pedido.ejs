@@ -10,125 +10,134 @@
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
+    <style>
+        .separador{
+            margin: 20px;
+        }
+    </style>
     <script src='/socket.io.js' type='text/javascript'></script>
 </head>
+
 <body>
 <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10">
-        <div class="row">
-
-        </div>
+    <div class="col-sm-12">
         <div class="card">
             <div class="card-body">
-                <h2 class="card-title text-center">Realiza una compra</h2>
-                <form action="/api/pedido/nueva-compra"
-                      method="post">
+                <div>
+                    <h2 class="card-title text-center">Realiza una compra</h2>
+                </div>
+                <div class="row">
 
-                    <div class="col-sm-3">
+                    <div class="col-sm-6">
+                        <label for="ciUsuario">CI</label>
+                        <input type="text"
+                               name="ciUsuario"
+                               class="form-control"
+                               id="ciUsuario"
+                               placeholder="Ingrese su CI">
 
-                        <div class="form-group">
-                            <label for="ciUsuario">CI</label>
-                            <input type="text"
-                                   name="ciUsuario"
-                                   class="form-control"
-                                   id="ciUsuario"
-                                   placeholder="Ingrese su CI">
-                        </div>
 
-                        <div class="form-group">
-                            <label for="nombreUsuario">Nombre</label>
-                            <input type="text"
-                                   name="nombreUsuario"
-                                   class="form-control"
-                                   id="nombreUsuario"
-                                   placeholder="Ingrese su nombre">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="direccionUsuario">Dirección</label>
-                            <input type="text"
-                                   name="direccionUsuario"
-                                   class="form-control"
-                                   id="direccionUsuario"
-                                   placeholder="Ingrese su dirección">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="telefonoUsuario">Teléfono</label>
-                            <input type="text"
-                                   name="telefonoUsuario"
-                                   class="form-control"
-                                   id="telefonoUsuario"
-                                   placeholder="Ingrese su teléfono">
-                        </div>
-                        <button type="submit" class="btn btn-outline-success btn-block" onclick="pedidoComprado()">Comprar</button>
+                        <label for="nombreUsuario">Nombre</label>
+                        <input type="text"
+                               name="nombreUsuario"
+                               class="form-control"
+                               id="nombreUsuario"
+                               placeholder="Ingrese su nombre">
                     </div>
                     <div class="col-sm-6">
-                        <select class="form-control form-control-sm">
-                        </select>
+                        <label for="direccionUsuario">Dirección</label>
+                        <input type="text"
+                               name="direccionUsuario"
+                               class="form-control"
+                               id="direccionUsuario"
+                               placeholder="Ingrese su dirección">
+
+
+                        <label for="telefonoUsuario">Teléfono</label>
+                        <input type="text"
+                               name="telefonoUsuario"
+                               class="form-control"
+                               id="telefonoUsuario"
+                               placeholder="Ingrese su teléfono">
                     </div>
-                </form>
+                </div>
+                <div class="separador"></div>
+                <div class="col-sm-6">
+                    <label for="actores">Actores:</label>
+                    <select name="actores" id="actores" onchange="location = '/api/pedido/nueva-compra/'+this.value">
+                        <option value="0">Seleccione un actor</option>
+                        <%actores.forEach((actor)=>{%>
+                        <option value=<%=actor.id%>><%=actor.nombresActor +" "+ actor.apellidosActor%></option>
+                        <%})%>
+                    </select>
+
+                </div>
+
+                <%if(peliculas.length>0){%>
+                    <div class="col-sm-6">
+                        <table class="table table-striped" id="tableRow">
+                            <th>Nombre Pelicula</th>
+                            </tr>
+                            <%peliculas.forEach((pedido)=>{%>
+                            <tr>
+                                <td><%=pedido.nombrePelicula%></td>
+                            </tr>
+                            <%})%>
+                        </table>
+                    </div>
+                <%}%>
             </div>
+
         </div>
     </div>
-    <div class="col-sm-1"></div>
 </div>
 
 <script>
 
-    const url = 'http://localhost:3001/websockets';
-    const socket = io(url);
-    console.log('Ya mismito nos conectamos');
-    socket.on(
-        'connect', //nombre del evento
-        ()=>{
-            console.log('Estamos conectados');
-        }
-    );
-    socket.on(
-        'comprado',
-        ()=>{
-            console.log('Compró');
-        }
-    )
-
-
-    function pedidoComprado() {
-        const nombreUsuario = document.getElementById("nombreUsuario").value;
-        const ciUsuario = document.getElementById("ciUsuario").value;
-        const direccionUsuario = document.getElementById("direccionUsuario").value;
-        const telefonoUsuario = document.getElementById("telefonoUsuario").value;
-
-
-        const nombreMetodo = 'realizoPedido';
-        const datos ={
-            nombreUsuario:nombreUsuario,
-            ciUsuario:ciUsuario,
-            direccionUsuario:direccionUsuario,
-            telefonoUsuario:telefonoUsuario,
-            totalSinImpuesto: 12.3,
-            totalConImpuesto: 10.1,
-            estadoPedido:'Por despachar'
-
-        };
-        socket.emit(
-            nombreMetodo,
-            datos,
-            (respuesta)=>{
-                console.log(respuesta)
+        const url = 'http://localhost:3001/websockets';
+        const socket = io(url);
+        console.log('Ya mismito nos conectamos');
+        socket.on(
+            'connect', //nombre del evento
+            () => {
+                console.log('Estamos conectados');
             }
         );
-    }
-
-</script>
-<script>
-    function enviar() {
-        
-    }
-</script>
+        socket.on(
+            'comprado',
+            () => {
+                console.log('Compró');
+            }
+        )
 
 
+        function pedidoComprado() {
+            const nombreUsuario = document.getElementById("nombreUsuario").value;
+            const ciUsuario = document.getElementById("ciUsuario").value;
+            const direccionUsuario = document.getElementById("direccionUsuario").value;
+            const telefonoUsuario = document.getElementById("telefonoUsuario").value;
 
+
+            const nombreMetodo = 'realizoPedido';
+            const datos = {
+                nombreUsuario: nombreUsuario,
+                ciUsuario: ciUsuario,
+                direccionUsuario: direccionUsuario,
+                telefonoUsuario: telefonoUsuario,
+                totalSinImpuesto: 12.3,
+                totalConImpuesto: 10.1,
+                estadoPedido: 'Por despachar'
+
+            };
+            socket.emit(
+                nombreMetodo,
+                datos,
+                (respuesta) => {
+                    console.log(respuesta)
+                }
+            );
+        }
+
+    </script>
 </body>
 </html>

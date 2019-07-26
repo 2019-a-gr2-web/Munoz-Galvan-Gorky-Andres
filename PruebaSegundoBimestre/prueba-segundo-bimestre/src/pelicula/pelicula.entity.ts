@@ -41,11 +41,8 @@ export class PeliculaEntity {
 
     @ManyToOne(
         type => ActorEntity,
-        actor => actor.peliculas
+        actor => actor.pelicula
     )
-    actorId:ActorEntity;
-
-
-
+    actor:number;
 
 }

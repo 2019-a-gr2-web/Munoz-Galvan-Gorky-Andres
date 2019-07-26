@@ -1,5 +1,5 @@
 export interface Pelicula {
-    idPelicula?:number,
+    id?:number,
     nombrePelicula:string,
     anioLanzamientoPelicula:number,
     ratingPelicula:number,

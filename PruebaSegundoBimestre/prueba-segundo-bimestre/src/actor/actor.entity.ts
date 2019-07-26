@@ -7,7 +7,7 @@ import {PeliculaEntity} from "../pelicula/pelicula.entity";
 export class ActorEntity {
 
     @PrimaryGeneratedColumn()
-    idActor:number;
+    id:number;
 
     @Column({
         type: 'varchar',
@@ -44,9 +44,9 @@ export class ActorEntity {
 
     @OneToMany(
         type => PeliculaEntity,
-        pelicula => pelicula.actorId
+        pelicula => pelicula
     )
-    peliculas: PeliculaEntity[]
+    pelicula: PeliculaEntity[]
 
 
 }
