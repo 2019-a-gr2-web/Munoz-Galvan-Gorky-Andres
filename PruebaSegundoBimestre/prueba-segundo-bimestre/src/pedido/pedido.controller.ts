@@ -13,6 +13,19 @@ export class PedidoController {
                 private readonly _PeliculaService:PeliculaService){
     }
 
+    @Get('listar-pedidos')
+    getListarPedidos(@Res() res){
+        res.redirect('/api/listar-compras');
+    }
+
+    @Get('listar-compras')
+    async getListarPedidosRender(@Res() res){
+        const pedidos:Pedido[] = await this._PedidoService.consultarPedidos();
+        res.render('usuario/listar-compras',{
+            pedidos
+        });
+    }
+
     @Get('menu-pedido')
     getMenuCompras(@Res() res,@Session() session){
         res.render('usuario/menu-pedido',{
@@ -104,6 +117,6 @@ export class PedidoController {
 
         const respuestaUsuario = await this._PedidoService
             .crearPedido(pedido);
-        res.send({mensaje:"se creo"});
+        res.redirect('/api/pedido/menu-pedido');
     }
 }
