@@ -28,6 +28,11 @@
 </head>
 <body>
 
+<%const existeError = mensaje%>
+<%if(existeError){%>
+    <h2>Error al actualizar.</h2>
+<%}%>
+
 <div class="row">
     <div class="col-sm-12">
         <div class="separador"></div>
@@ -98,8 +103,8 @@
                             <label for="anioLazamientoPelicula"></label>
                             <input type="text"
                             value="<%=pelicula.anioLanzamientoPelicula%>"
-                            name="anioLazamientoPelicula"
-                            id="anioLazamientoPelicula">
+                            name="anioLanzamientoPelicula"
+                            id="anioLanzamientoPelicula">
                         </td>
                         <td>
                             <label for="precioPelicula"></label>

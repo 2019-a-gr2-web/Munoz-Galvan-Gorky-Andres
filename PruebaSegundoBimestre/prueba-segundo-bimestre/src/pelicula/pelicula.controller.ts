@@ -26,7 +26,9 @@ export class PeliculaController {
     }
 
     @Post('editar-pelicula/:idPelicula')
-    async postModificarPelicula(@Param() param, @Body() pelicula:Pelicula,@Res() res){
+    async postModificarPelicula(@Param() param,
+                                @Body() pelicula:Pelicula,
+                                @Res() res){
 
         pelicula.anioLanzamientoPelicula = Number(pelicula.anioLanzamientoPelicula);
         pelicula.precioPelicula = Number(pelicula.precioPelicula);
@@ -43,7 +45,9 @@ export class PeliculaController {
         try {
             const errores = await validate(peliculaAValidar);
             if(errores.length>0){
-
+                console.log(errores);
+                const url = '/api/pelicula/listar-peliculas/'+Number(pelicula.actor)+"?mensaje=Error al actualizar";
+                res.redirect(url);
             }else{
                 await this._PeliculaService.modificarPelicula(pelicula);
                 const url = '/api/pelicula/listar-peliculas/'+Number(pelicula.actor);
@@ -107,10 +111,11 @@ export class PeliculaController {
     }
 
     @Get('listar-peliculas/:idActor')
-    async getListarPeliculas(@Param() param,@Res() res){
+    async getListarPeliculas(@Param() param,@Res() res,
+                             @Query('mensaje') mensaje: string){
         const idActor = Number(param.idActor);
         const peliculas = await this._PeliculaService.consultarPeliculasPorActor(idActor);
-        res.render('admin/listar-peliculas',{peliculas,idActor});
+        res.render('admin/listar-peliculas',{peliculas,idActor,mensaje});
 
     }
 }
