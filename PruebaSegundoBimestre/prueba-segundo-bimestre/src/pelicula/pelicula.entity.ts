@@ -21,6 +21,14 @@ export class PeliculaEntity {
     anioLanzamientoPelicula:number;
 
     @Column({
+        type: 'decimal',
+        precision: 10,
+        scale:2,
+        name: 'precio_pelicula',
+    })
+    precioPelicula:number;
+
+    @Column({
         type:'int',
         name: 'rating_pelicula_pelicula',
     })
