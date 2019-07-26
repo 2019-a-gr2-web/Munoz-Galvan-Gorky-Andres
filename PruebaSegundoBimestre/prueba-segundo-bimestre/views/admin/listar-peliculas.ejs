@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Películas</title>
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+
+    <style>
+        .separador{
+            margin: 50px;
+        }
+        input{
+            border-radius:5px;
+            padding: 2px;
+        }
+        .eliminar{
+            margin: 2px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+        <div class="separador"></div>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title text-center">Películas</h3>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <form action=""
+                        method="post">
+                            <div class="form-group">
+                                <label for="buscarPelicula">Buscar películas</label>
+                                <input type="text" class="form-control" id="buscarPelicula" placeholder="Busque por nombre o año de lanzamiento">
+                            </div>
+                            <button type="submit" class="btn btn-outline-success">Buscar</button>
+                        </form>
+                    </div>
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-2">
+                        <form action="/api/pelicula/nueva-pelicula"
+                        method="post">
+                            <label for="idActor"></label>
+                            <input type="text"
+                            name="idActor"
+                            id="idActor"
+                            value="<%=idActor%>"
+                            hidden>
+                            <button type="submit" class="btn btn-outline-success">Nueva película</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="separador"></div>
+                <h5 class="card-subtitle mb-2 text-muted">Lista de películas</h5>
+                <table class="table table-hover text-center">
+                    <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Año de lanzamiento</th>
+                        <th>Precio</th>
+                        <th>Sinopsis</th>
+                        <th>Rating</th>
+                        <th>Gestionar</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <%peliculas.forEach((pelicula)=>{%>
+                    <form action="/api/pelicula/editar-pelicula/<%=pelicula.idPelicula%>"
+                          method="post">
+                    <tr>
+
+                        <td>
+                            <label for="nombrePelicula"></label>
+                            <input type="text"
+                                   id="nombrePelicula"
+                                   name="nombrePelicula"
+                                   value="<%= pelicula.nombrePelicula %>"></td>
+                        <td>
+                            <label for="anioLazamientoPelicula"></label>
+                            <input type="text"
+                            value="<%=pelicula.anioLanzamientoPelicula%>"
+                            name="anioLazamientoPelicula"
+                            id="anioLazamientoPelicula">
+                        </td>
+                        <td><%=pelicula.precioPelicula%></td>
+                        <td><%=pelicula.sinopsisPelicula%></td>
+                        <td><%=pelicula.ratingPelicula%></td>
+                        <td>
+                            <button type="submit" class="btn btn-outline-success">Editar</button>
+                            <a href="/api/pelicula/eliminar-pelicula/<%=idActor%>/<%=pelicula.idPelicula%>">
+                                <button type="button" class="btn btn-outline-success eliminar">Eliminar</button>
+                            </a>
+                        </td>
+                    </tr>
+                    </form>
+                    <%})%>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+</body>
+</html>

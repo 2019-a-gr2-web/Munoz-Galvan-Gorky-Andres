@@ -13,6 +13,10 @@ export class PeliculaService {
     }
 
 
+    eliminarPelicula(idPelicula):Promise<PeliculaEntity[]>{
+        this._peliculasRepository.delete(idPelicula);
+        return this._peliculasRepository.find();
+    }
 
     consultarPeliculas():Promise<PeliculaEntity[]>{
         return this._peliculasRepository.find()

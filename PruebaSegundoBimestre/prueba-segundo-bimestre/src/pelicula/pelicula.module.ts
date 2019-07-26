@@ -3,10 +3,11 @@ import {PeliculaEntity} from "./pelicula.entity";
 import {TypeOrmModule} from "@nestjs/typeorm";
 import {PeliculaController} from "./pelicula.controller";
 import {PeliculaService} from "./pelicula.service";
+import {ActorModule} from "../actor/actor.module";
 
 
 @Module({
-    imports:[
+    imports:[ActorModule,
         TypeOrmModule.forFeature(
             [
                 PeliculaEntity

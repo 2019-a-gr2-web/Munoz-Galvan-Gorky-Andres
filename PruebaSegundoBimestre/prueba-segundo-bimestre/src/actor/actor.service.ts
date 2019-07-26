@@ -15,5 +15,9 @@ export class ActorService {
         return this._actoresRepository.find();
     }
 
+    consultarActorPorId(idActor:number):Promise<ActorEntity>{
+        return this._actoresRepository.findOne({where:{id:idActor}});
+    }
+
 
 }
