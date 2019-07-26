@@ -12,13 +12,101 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
 
+    <style>
+        .cancelar{
+            margin: 2px;
+        }
+        a:link{
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 
-<div class="card">
-    <div class="card-body">
-        <h5 class="card-title">Ingresa una nueva película del actor <%=nombreActor%></h5>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title text-center">Ingresa una nueva película del actor <%=nombreActor%></h5>
+
+                <form action="">
+
+                    <div class="form-group">
+                        <label for="nombrePelicula">Nombre de la película</label>
+                        <input type="text" class="form-control"
+                               id="nombrePelicula"
+                               name="nombrePelicula"
+                               placeholder="Ingresa el nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="anioLanzamientoPelicula">Año de lanzamiento</label>
+                        <input type="date"
+                               class="form-control"
+                               id="anioLanzamientoPelicula"
+                               name="anioLanzamientoPelicula">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ratingPelicula">Rating</label>
+                        <input type="number"
+                               min="0"
+                               max="10"
+                               class="form-control"
+                               id="ratingPelicula"
+                               name="ratingPelicula">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="precioPelicula">Precio</label>
+                        <input type="number"
+                               min="0"
+                               max="100"
+                               step="0.1"
+                               class="form-control"
+                               id="precioPelicula"
+                               name="precioPelicula">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="actoresPrincipalesPelicula">Actores principales</label>
+                        <input type="text"
+                               class="form-control"
+                               id="actoresPrincipalesPelicula"
+                               name="actoresPrincipalesPelicula">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sinopsisPelicula">Sinopsis</label>
+                        <textarea class="form-control" id="sinopsisPelicula" name="sinopsisPelicula"
+                                  rows="3"></textarea>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-4">
+                            <a href="/api/pelicula/listar-peliculas/<%= idActor %>">
+                                <button type="button" class="btn btn-outline-success btn-block">Cancelar</button></a>
+                        </div>
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-4">
+                            <button class="btn btn-outline-success btn-block">Guardar</button>
+                        </div>
+                        <div class="col-sm-1"></div>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+        </div>
+
+
     </div>
+    <div class="col-sm-3"></div>
 </div>
 
 </body>
