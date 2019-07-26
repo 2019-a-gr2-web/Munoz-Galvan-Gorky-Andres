@@ -4,6 +4,7 @@
     <list default="true" id="90adf8ad-339a-4f9c-8e7a-96a175b607b6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/sessions/_PO6Oj_mKReOk5rKKwn8NenJ3iUEeCdb.json" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/sessions/_PO6Oj_mKReOk5rKKwn8NenJ3iUEeCdb.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-actores.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-actores.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-peliculas.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-peliculas.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.controller.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="33" column="66" lean-forward="true" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
+            <state relative-caret-position="-161">
+              <caret line="26" column="76" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
               <folding>
                 <element signature="e#0#78#0" expanded="true" />
               </folding>
@@ -35,8 +36,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-peliculas.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="106" column="55" selection-start-line="106" selection-start-column="55" selection-end-line="106" selection-end-column="55" />
+            <state relative-caret-position="119">
+              <caret line="63" column="24" selection-start-line="63" selection-start-column="24" selection-end-line="65" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-actores.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="49" column="90" selection-start-line="49" selection-start-column="90" selection-end-line="49" selection-end-column="90" />
             </state>
           </provider>
         </entry>
@@ -112,7 +122,6 @@
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/usuario/usuario.controller.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/actor/actor.service.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.module.ts" />
-        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-actores.ejs" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/dto/pelicula.create.dto.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/interfaces/pelicula.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/nueva-pelicula.ejs" />
@@ -122,8 +131,9 @@
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/pedido.ejs" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.service.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/dto/pelicula.update.dto.ts" />
-        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-peliculas.ejs" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.controller.ts" />
+        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-peliculas.ejs" />
+        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-actores.ejs" />
       </list>
     </option>
   </component>
@@ -176,11 +186,43 @@
             <path>
               <item name="Web-Munoz-Galvan-Gorky-Andres" type="b2602c69:ProjectViewProjectNode" />
               <item name="Web-Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
-              <item name="01-http" type="462c0819:PsiDirectoryNode" />
-              <item name="02-servidor-web-nodejs" type="462c0819:PsiDirectoryNode" />
-              <item name="api-web" type="462c0819:PsiDirectoryNode" />
+              <item name="PruebaSegundoBimestre" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web-Munoz-Galvan-Gorky-Andres" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web-Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
+              <item name="PruebaSegundoBimestre" type="462c0819:PsiDirectoryNode" />
+              <item name="prueba-segundo-bimestre" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web-Munoz-Galvan-Gorky-Andres" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web-Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
+              <item name="PruebaSegundoBimestre" type="462c0819:PsiDirectoryNode" />
+              <item name="prueba-segundo-bimestre" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tragos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web-Munoz-Galvan-Gorky-Andres" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web-Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
+              <item name="PruebaSegundoBimestre" type="462c0819:PsiDirectoryNode" />
+              <item name="prueba-segundo-bimestre" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="actor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web-Munoz-Galvan-Gorky-Andres" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web-Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
+              <item name="PruebaSegundoBimestre" type="462c0819:PsiDirectoryNode" />
+              <item name="prueba-segundo-bimestre" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web-Munoz-Galvan-Gorky-Andres" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web-Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
+              <item name="PruebaSegundoBimestre" type="462c0819:PsiDirectoryNode" />
+              <item name="prueba-segundo-bimestre" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -198,18 +240,18 @@
     <property name="ts.external.directory.path" value="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\ProyectoIndividual\proyecto-individual\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\PruebaSegundoBimestre\prueba-segundo-bimestre\publico" />
-      <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\deberes\deber-websockets\src" />
-      <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\deberes\deber-websockets" />
-      <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\deberes\websocket\publico\websocket" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\PruebaSegundoBimestre\prueba-segundo-bimestre\views\usuario" />
       <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\PruebaSegundoBimestre\prueba-segundo-bimestre\views\despachador" />
       <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\PruebaSegundoBimestre\prueba-segundo-bimestre\publico" />
       <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\PruebaSegundoBimestre\prueba-segundo-bimestre\src\pedido\websocket" />
       <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\01-http\02-servidor-web-nodejs\api-web\src\distribuidor" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\PruebaSegundoBimestre\prueba-segundo-bimestre\publico" />
+      <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\deberes\deber-websockets\src" />
+      <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\deberes\deber-websockets" />
+      <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\deberes\websocket\publico\websocket" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -290,18 +332,18 @@
       <workItem from="1564070619613" duration="7232000" />
       <workItem from="1564083798906" duration="16352000" />
       <workItem from="1564112856484" duration="14755000" />
-      <workItem from="1564153818621" duration="20178000" />
+      <workItem from="1564153818621" duration="21415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="314446000" />
+    <option name="totallyTimeSpent" value="315683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987775" visible="true" weight="0.19791667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987775" visible="true" weight="0.19791667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5012225" side_tool="true" weight="0.21502976" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -314,7 +356,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32991454" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.32991454" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49776787" visible="true" weight="0.30940172" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49776787" visible="true" weight="0.34529915" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50223213" side_tool="true" weight="0.26324788" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -345,13 +387,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/actor/actor.controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/despachador/login.controller.ts" />
     <entry file="file://$PROJECT_DIR$/PruebaPrimerBimestre/prueba-primer-bimestre/src/tienda/tienda.module.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -577,13 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-actores.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/node_modules/typeorm/repository/Repository.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -732,20 +760,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-peliculas.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="106" column="55" selection-start-line="106" selection-start-column="55" selection-end-line="106" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.controller.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="33" column="66" lean-forward="true" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
+        <state relative-caret-position="-161">
+          <caret line="26" column="76" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
           <folding>
             <element signature="e#0#78#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/actor/actor.controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-peliculas.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="63" column="24" selection-start-line="63" selection-start-column="24" selection-end-line="65" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-actores.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="49" column="90" selection-start-line="49" selection-start-column="90" selection-end-line="49" selection-end-column="90" />
         </state>
       </provider>
     </entry>

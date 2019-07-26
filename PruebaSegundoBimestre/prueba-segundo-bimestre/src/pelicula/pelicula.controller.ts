@@ -18,9 +18,13 @@ export class PeliculaController {
         const idActor = Number(query.idActor);
         if(query.buscarPelicula.length>0){
             const peliculas = await this._PeliculaService.consultarPeliculaPorNombre(idActor,query.buscarPelicula);
-            res.render('admin/listar-peliculas',{peliculas,idActor});
+            let mensaje = '';
+            if(peliculas.length==0){
+                mensaje = "No hay resultados";
+            }
+            res.render('admin/listar-peliculas',{peliculas,idActor,mensaje});
         }else{
-            const url = '/api/pelicula/listar-peliculas/'+idActor;
+            const url = '/api/pelicula/listar-peliculas/'+idActor+"?mensaje=";
             res.redirect(url);
         }
     }

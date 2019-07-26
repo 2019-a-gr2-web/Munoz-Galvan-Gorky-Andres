@@ -47,9 +47,9 @@
                         <td><%=actor.fechaNacimientoActor%></td>
                         <td><%=actor.numeroPeliculasActor%></td>
                         <td>
-                            <form action="/api/pelicula/listar-peliculas/<%=actor.id%>">
-                                <button class="btn btn-outline-success">Películas</button>
-                            </form>
+                            <a href="/api/pelicula/listar-peliculas/<%=actor.id%>?mensaje=">
+                                <button type="button" class="btn btn-outline-success">Películas</button>
+                            </a>
                         </td>
                     </tr>
                     <%})%>
