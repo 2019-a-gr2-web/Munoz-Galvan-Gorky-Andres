@@ -26,7 +26,7 @@ export class PedidoService {
         return this._pedidosRepository.find();
     }
 
-    consultarTodosPedidos():Promise<PedidoEntity[]>{
+    consultarPedidosPorDespachar():Promise<PedidoEntity[]>{
         return this._pedidosRepository.find({where:{estadoPedido:'Por despachar'}});
     }
 

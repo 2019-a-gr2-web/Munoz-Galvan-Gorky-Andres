@@ -34,7 +34,7 @@ export class ActorEntity {
         type: 'int',
         name: 'numero_peliculas_actor',
     })
-    numeroPeliculasActor: string;
+    numeroPeliculasActor: number;
 
     @Column({
         type:'boolean',
