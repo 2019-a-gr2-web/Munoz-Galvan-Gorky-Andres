@@ -18,7 +18,6 @@ export class PedidoService {
     crearPedido(nuevoPedido:Pedido):Promise<PedidoEntity>{
 
         const objetoEntidad = this._pedidosRepository.create(nuevoPedido); //Crea una nueva instancia de la entidad
-        this.peliculasSeleccionadas = [];
         return this._pedidosRepository.save(objetoEntidad);
     }
 

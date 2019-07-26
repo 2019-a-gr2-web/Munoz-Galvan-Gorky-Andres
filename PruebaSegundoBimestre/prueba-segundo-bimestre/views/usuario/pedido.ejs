@@ -68,8 +68,6 @@
                         </div>
 
                         <%if(peliculas.length>0){%>
-                    <form action="/api/pedido/anadir-pelicula"
-                          method="post">
                         <div class="col-sm-6">
                             <table class="table table-striped" id="tableRow">
                                 <th>Nombre Pelicula</th>
@@ -77,6 +75,8 @@
                                 <th>Añadir</th>
                                 </tr>
                                 <%peliculas.forEach((pedido)=>{%>
+                                <form action="/api/pedido/anadir-pelicula"
+                                      method="post">
                                 <tr>
                                     <td>
                                         <input type="text" value="<%=pedido.nombrePelicula%>"
@@ -92,13 +92,20 @@
                                         >
                                     </td>
                                     <td>
+                                        <input type="text"
+                                               value="<%=pedido.actor %>"
+                                               class="form-control"
+                                               name="idActor"
+                                               hidden
+                                        >
                                         <button type="submit" class="btn btn-outline-success">+</button>
                                     </td>
                                 </tr>
+                                </form>
                                 <%})%>
                             </table>
                         </div>
-                    </form>
+
                         <%}%>
                 </div>
 
@@ -172,7 +179,7 @@
                             </div>
 
                         </div>
-                        <button type="button" onclick="pedidoComprado()" class="btn btn-success">Comprar</button>
+                        <button onclick="pedidoComprado()" class="btn btn-success">Comprar</button>
                     </form>
 
                 </div>

@@ -32,7 +32,8 @@
             <div class="card-body">
                 <h5 class="card-title text-center">Ingresa una nueva película del actor <%=nombreActor%></h5>
 
-                <form action="">
+                <form action="/api/pelicula/guardar-pelicula"
+                method="post">
 
                     <div class="form-group">
                         <label for="nombrePelicula">Nombre de la película</label>
@@ -43,7 +44,8 @@
                     </div>
                     <div class="form-group">
                         <label for="anioLanzamientoPelicula">Año de lanzamiento</label>
-                        <input type="date"
+                        <input type="number"
+                               min="1899"
                                class="form-control"
                                id="anioLanzamientoPelicula"
                                name="anioLanzamientoPelicula">
@@ -79,6 +81,16 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="actoresPrincipalesPelicula"></label>
+                        <input type="text"
+                               class="form-control"
+                               id="actor"
+                               name="actor"
+                               value="<%=idActor %>"
+                               hidden>
+                    </div>
+
+                    <div class="form-group">
                         <label for="sinopsisPelicula">Sinopsis</label>
                         <textarea class="form-control" id="sinopsisPelicula" name="sinopsisPelicula"
                                   rows="3"></textarea>
@@ -108,6 +120,10 @@
     </div>
     <div class="col-sm-3"></div>
 </div>
-
+<script>
+    function getYear() {
+        return new Date().getFullYear()
+    }
+</script>
 </body>
 </html>

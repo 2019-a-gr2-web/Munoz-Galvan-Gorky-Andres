@@ -36,24 +36,25 @@ export class PedidoController {
     @Post('anadir-pelicula')
     postAnadirPelicula(@Body() body,@Res() res){
         const peliculasSeleccionadas:PeliculasSeleccionadas[] = this._PedidoService.peliculasSeleccionadas;
-        const existePelicula = peliculasSeleccionadas.find((pelicula) => {
-            return pelicula.nombrePelicula == body.nombre
-        });
-        if(existePelicula!=undefined){
-            this._PedidoService.modificarPeliculaSeleccionada(existePelicula)
-        }else{
-            const precio = Number(body.precio);
-            const iva = precio * 1.12;
-            const peliculaNueva: PeliculasSeleccionadas = {
-                nombrePelicula: body.nombre,
-                cantidadPelicula: 1,
-                precioPelicula: precio,
-                totalSinImpuesto: precio,
-                totalConImpuesto: precio+iva
-            };
-            this._PedidoService.peliculasSeleccionadas.push(peliculaNueva);
+            const existePelicula = peliculasSeleccionadas.find((pelicula) => {
+                return pelicula.nombrePelicula == body.nombre
+            });
+            if(existePelicula!=undefined){
+                this._PedidoService.modificarPeliculaSeleccionada(existePelicula)
+            }else{
+                const precio = Number(body.precio);
+                const iva = precio * 1.12;
+                const peliculaNueva: PeliculasSeleccionadas = {
+                    nombrePelicula: body.nombre,
+                    cantidadPelicula: 1,
+                    precioPelicula: precio,
+                    totalSinImpuesto: precio,
+                    totalConImpuesto: precio+iva
+                };
+                this._PedidoService.peliculasSeleccionadas.push(peliculaNueva);
         }
-        res.redirect('/api/pedido/nueva-compra/-1');
+            const url ='/api/pedido/nueva-compra/'+ Number(body.idActor);
+        res.redirect(url);
     }
 
     @Get('nueva-compra/:idActor')
@@ -68,12 +69,12 @@ export class PedidoController {
             const pedido = {} as Pedido;
             pedido.estadoPedido = 'Iniciado';
             pedido.ciUsuario = "";
-            pedido.totalConImpuesto = 0;
-            pedido.totalSinImpuesto = 0;
+            pedido.totalConImpuesto = 0.0;
+            pedido.totalSinImpuesto = 0.0;
             pedido.nombreUsuario = session.username;
             pedido.direccionUsuario = "";
             const pedidoIniciado = await this._PedidoService.crearPedido(pedido);
-            const peliculas = await this._PeliculaService.consultarPeliculas();
+            const peliculas = [];
             session.nuevoPedido = pedidoIniciado;
             res.render('usuario/pedido',{
                 nuevoPedido:pedidoIniciado,
@@ -83,7 +84,7 @@ export class PedidoController {
             })
         }else{
             const peliculas = await this._PeliculaService.consultarPeliculasPorActor(idActor);
-            console.log(peliculas);
+            peliculas.forEach((pelicula)=>pelicula.actor = idActor);
             const pedido: Pedido= session.nuevoPedido;
             console.log(pedido.idPedido);
             res.render('usuario/pedido',{
@@ -114,9 +115,9 @@ export class PedidoController {
         pedido.nombreUsuario = body.nombreUsuario;
         pedido.direccionUsuario = body.direccionUsuario;
 
-
         const respuestaUsuario = await this._PedidoService
             .crearPedido(pedido);
+        console.log('creó');
         res.redirect('/api/pedido/menu-pedido');
     }
 }

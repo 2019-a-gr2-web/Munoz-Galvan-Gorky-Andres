@@ -3,9 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="90adf8ad-339a-4f9c-8e7a-96a175b607b6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/sessions/_PO6Oj_mKReOk5rKKwn8NenJ3iUEeCdb.json" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/sessions/_PO6Oj_mKReOk5rKKwn8NenJ3iUEeCdb.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/dto/pelicula.create.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/dto/pelicula.create.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/interfaces/pelicula.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/interfaces/pelicula.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-actores.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-actores.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/nueva-pelicula.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/nueva-pelicula.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/menu-pedido.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/menu-pedido.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/pedido.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/pedido.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,44 +27,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/usuario/usuario.controller.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#73#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.controller.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#66#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/nueva-pelicula.ejs">
+        <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.controller.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            <state relative-caret-position="102">
+              <caret line="66" column="66" selection-start-line="66" selection-start-column="66" selection-end-line="66" selection-end-column="66" />
+              <folding>
+                <element signature="e#0#80#0" expanded="true" />
+                <element signature="n#!!block;n#getListarCompras#0;n#PedidoController#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-peliculas.ejs">
+        <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1316">
-              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+            <state relative-caret-position="290">
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/pedido.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1136">
+              <caret line="115" column="58" selection-start-line="115" selection-start-column="58" selection-end-line="115" selection-end-column="58" />
+              <folding>
+                <element signature="e#8691#8757#0#HTML" />
+                <element signature="e#8830#8884#0#HTML" />
+                <element signature="e#8929#10203#0#HTML" />
+                <element signature="e#10303#10550#0#HTML" />
+                <element signature="e#10415#10475#0#HTML" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,28 +117,28 @@
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/despachador/despachador.controller.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/actor/actor.module.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.module.ts" />
-        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/menu-pedido.ejs" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.entity.ts" />
-        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/interfaces/pelicula.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/interfaces/peliculasSeleccionadas.ts" />
-        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/pedido.ejs" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/despachador/despachar.ejs" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/listar-compras.ejs" />
-        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.controller.ts" />
-        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.service.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/usuario/usuario.module.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/actor/actor.entity.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/actor/dto/actor.create.dto.ts" />
-        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/dto/pelicula.create.dto.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/usuario/usuario.controller.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/dto/pelicula.update.dto.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/actor/actor.service.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.module.ts" />
-        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.service.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-peliculas.ejs" />
-        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.controller.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-actores.ejs" />
+        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/dto/pelicula.create.dto.ts" />
+        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.service.ts" />
+        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/interfaces/pelicula.ts" />
         <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/nueva-pelicula.ejs" />
+        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.controller.ts" />
+        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/menu-pedido.ejs" />
+        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.service.ts" />
+        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/pedido.ejs" />
+        <option value="$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.controller.ts" />
       </list>
     </option>
   </component>
@@ -267,32 +272,6 @@
               <item name="Web-Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
               <item name="PruebaSegundoBimestre" type="462c0819:PsiDirectoryNode" />
               <item name="prueba-segundo-bimestre" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pelicula" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-Munoz-Galvan-Gorky-Andres" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
-              <item name="PruebaSegundoBimestre" type="462c0819:PsiDirectoryNode" />
-              <item name="prueba-segundo-bimestre" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pelicula" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-Munoz-Galvan-Gorky-Andres" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
-              <item name="PruebaSegundoBimestre" type="462c0819:PsiDirectoryNode" />
-              <item name="prueba-segundo-bimestre" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pelicula" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web-Munoz-Galvan-Gorky-Andres" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web-Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
-              <item name="PruebaSegundoBimestre" type="462c0819:PsiDirectoryNode" />
-              <item name="prueba-segundo-bimestre" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -419,18 +398,18 @@
       <workItem from="1564070619613" duration="7232000" />
       <workItem from="1564083798906" duration="16352000" />
       <workItem from="1564112856484" duration="14755000" />
-      <workItem from="1564153818621" duration="8963000" />
+      <workItem from="1564153818621" duration="15190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="303231000" />
+    <option name="totallyTimeSpent" value="309458000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987775" visible="true" weight="0.27455357" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987775" visible="true" weight="0.27455357" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5012225" side_tool="true" weight="0.21502976" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -443,7 +422,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32991454" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.32991454" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49776787" visible="true" weight="0.3025641" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49776787" visible="true" weight="0.20683761" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50223213" side_tool="true" weight="0.26324788" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -474,16 +453,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.gateway.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding>
-            <element signature="e#34#121#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/actor/actor.controller.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -545,13 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="94" column="17" lean-forward="true" selection-start-line="87" selection-start-column="12" selection-end-line="94" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/interfaces/pedido.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -630,32 +592,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.entity.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/tragos.entity.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
           <folding>
             <element signature="e#0#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/tragos.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -675,13 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/pedido.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="208" column="78" selection-start-line="208" selection-start-column="78" selection-end-line="208" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/listar-compras.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -696,26 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/actor/interfaces/actor.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -723,37 +638,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/tragos.controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="51" column="44" lean-forward="true" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/usuario/usuario.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/dto/tragos.create.dto.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/dto/pelicula.create.dto.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -791,13 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/menu-pedido.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-245">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -818,30 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/tragos/crear-editar.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="32" selection-start-line="32" selection-end-line="35" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/interfaces/pelicula.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-actores.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -849,27 +706,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.controller.ts">
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-peliculas.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        <state relative-caret-position="-1139">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/node_modules/typeorm/repository/Repository.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/tragos.controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="65" column="64" selection-start-line="65" selection-start-column="64" selection-end-line="65" selection-end-column="64" />
           <folding>
-            <element signature="e#0#66#0" expanded="true" />
+            <element signature="e#0#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/listar-peliculas.ejs">
+    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/dto/tragos.create.dto.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1316">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        <state relative-caret-position="102">
+          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/dto/pelicula.create.dto.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/tragos/crear-editar.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="42" column="60" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/admin/nueva-pelicula.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state relative-caret-position="101">
+          <caret line="87" column="38" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/interfaces/pelicula.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/tragos.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/menu-pedido.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.entity.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="53" column="9" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/interfaces/pedido.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-560">
+          <caret line="19" column="115" selection-start-line="19" selection-start-column="115" selection-end-line="19" selection-end-column="115" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pelicula/pelicula.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/views/usuario/pedido.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1136">
+          <caret line="115" column="58" selection-start-line="115" selection-start-column="58" selection-end-line="115" selection-end-column="58" />
+          <folding>
+            <element signature="e#8691#8757#0#HTML" />
+            <element signature="e#8830#8884#0#HTML" />
+            <element signature="e#8929#10203#0#HTML" />
+            <element signature="e#10303#10550#0#HTML" />
+            <element signature="e#10415#10475#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaSegundoBimestre/prueba-segundo-bimestre/src/pedido/pedido.controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="66" column="66" selection-start-line="66" selection-start-column="66" selection-end-line="66" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#80#0" expanded="true" />
+            <element signature="n#!!block;n#getListarCompras#0;n#PedidoController#0" />
+          </folding>
         </state>
       </provider>
     </entry>

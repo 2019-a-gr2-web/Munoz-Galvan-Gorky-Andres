@@ -6,6 +6,7 @@ export interface Pelicula {
     precioPelicula:number;
     actoresPrincipalesPelicula:string;
     sinopsisPelicula:string;
+    actor?:number;
 
 
 
