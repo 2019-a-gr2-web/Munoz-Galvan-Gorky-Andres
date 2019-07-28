@@ -7266,7 +7266,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var parseqs = __webpack_require__(36);
 	var inherit = __webpack_require__(37);
 	var yeast = __webpack_require__(38);
-	var debug = __webpack_require__(3)('engine.io-client:websocket');
+	var debug = __webpack_require__(3)('engine.io-client:websockets');
 	var BrowserWebSocket = global.WebSocket || global.MozWebSocket;
 	var NodeWebSocket;
 	if (typeof window === 'undefined') {
@@ -7405,7 +7405,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    self.onData(ev.data);
 	  };
 	  this.ws.onerror = function (e) {
-	    self.onError('websocket error', e);
+	    self.onError('websockets error', e);
 	  };
 	};
 
@@ -7441,7 +7441,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          }
 	        }
 
-	        // Sometimes the websocket has already been closed but the browser didn't
+	        // Sometimes the websockets has already been closed but the browser didn't
 	        // have a chance of informing us about it yet, in that case send will
 	        // throw an error
 	        try {
@@ -7452,7 +7452,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            self.ws.send(data, opts);
 	          }
 	        } catch (e) {
-	          debug('websocket closed before onclose event');
+	          debug('websockets closed before onclose event');
 	        }
 
 	        --total || done();

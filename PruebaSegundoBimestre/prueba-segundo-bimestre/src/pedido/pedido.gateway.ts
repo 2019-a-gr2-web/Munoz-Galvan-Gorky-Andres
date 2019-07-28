@@ -15,7 +15,7 @@ export class PedidoGateway {
     @SubscribeMessage('realizoPedido')
     findAll(client:Client | any,data:any){
         client.broadcast.emit('comprado',data);
-        return 'Hola '+ data.nombre;
+        return 'Hola '+ data.nombre;    
     }
 
 }

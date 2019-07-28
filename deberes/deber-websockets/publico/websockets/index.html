@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mayor número</title>
+</head>
+<body>
+
+
+    <h1 id="titulo">
+        MAYOR NÚMERO
+    </h1>
+    <h2>Tienes que ingresar un número y esperar a que el resto de jugadores también lo hagan.</h2>
+    <h3>Si ingresaste el mayor número, ganaste.</h3>
+
+    <label for="numeroIngresado">Ingresa el número a jugar</label>
+    <input type="number"
+           id="numeroIngresado"
+    >
+
+    <button onclick="jugar()">Jugar</button>
+
+    <script src="/websockets/socket.io.js"></script>
+    <script>
+
+        const numeroIngresado = document.getElementById("numeroIngresado");
+
+        const url = 'http://localhost:3001/websockets';
+        const socket = io(url);
+        socket.on('connect',
+            ()=>{
+            console.log("Conectado");
+            });
+        socket.on(
+            'ingresoNumero',
+            (data)=> {
+                comprobar(data);
+                numeroIngresado.disabled = false;
+
+            });
+
+        function comprobar(valorRegresado) {
+            const valor = numeroIngresado.value;
+            console.log(valorRegresado);
+            console.log(valor);
+            if(Number(valor)> Number(valorRegresado)){
+                console.log("Ganaste :D")
+            }else {
+                console.log("perdiste :(")
+            }
+
+        }
+
+        function jugar() {
+
+            const numeroIngresado = document.getElementById("numeroIngresado");
+            const valor = numeroIngresado.value;
+
+            socket.emit(
+                'jugar',
+                valor,
+                (respuesta) => {
+                    console.log(respuesta);
+                }
+            );
+            numeroIngresado.disabled = true;
+        }
+
+
+    </script>
+</body>
+</html>

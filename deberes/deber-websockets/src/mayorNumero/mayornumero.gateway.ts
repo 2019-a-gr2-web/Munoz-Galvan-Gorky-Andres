@@ -7,12 +7,11 @@ import {Client} from "socket.io";
 export class MayornumeroGateway {
     @WebSocketServer() server;
 
-    @SubscribeMessage('holaMundo')
+    @SubscribeMessage('jugar')
     findAll(client:Client | any,data:any){
-        console.log(data);
+        const numeroJugadores = [];
         console.log('Nos hacen la petición');
-        console.log(this.server);
-        client.broadcast.emit('saludaron',data);
-        return 'Hola '+ data.nombre;
+        client.broadcast.emit('ingresoNumero',data);
+        return 'Ingresaste el numero '+ data;
     }
 }
