@@ -12,6 +12,18 @@
     <title>Document</title>
 </head>
 <body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="/api/producto/verProductos">Productos</a></li>
+            <li><a href="/api/promocion/verPromociones">Promociones</a></li>
+        </ul>
+    </div>
+</nav>
 
 <div class="container">
     <div class="panel panel-default">
@@ -70,12 +82,10 @@
                     <% x = -1 %>
                     <% arregloSeleccionados.forEach((plato)=>{ x++ %>
                     <tr>
-                        <form action="/api/combo/rmvPlato" method="post">
+                        <form action="/api/producto-promocion/rmvPlato" method="post">
 
                             <td><input id="nombreId" type="text" class="form-control" name="nombre"
                                        value="<%= plato.nombre %>"></td>
-                            <td><input id="descripcionId" type="text" class="form-control" name="descripcion"
-                                       value="<%= plato.descripcion %>"></td>
                             <td><input id="precioId" type="text" class="form-control" name="precio"
                                        value="<%= plato.precio %>">
                                 <input id="Id" type="hidden" class="form-control" name="id" value="<%= plato.id %>">
