@@ -25,6 +25,11 @@ export class ProductoController {
         const producto= await this._productosService.crear(produto)
         res.redirect('/api/producto/verProductos')
     }
+    @Post('eliminar')
+    async eliminar(@Res() res, @Body() body){
+        this._productosService.eliminar(body.id)
+        res.redirect('/api/producto/verProductos')
+    }
 
     // @Get('verProductos')
     // verProductos(@Res() res) {

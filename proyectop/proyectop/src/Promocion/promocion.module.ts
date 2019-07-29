@@ -3,6 +3,7 @@ import {PromocionController} from "./promocion.controller";
 import {PromocionService} from "./promocion.service";
 import {TypeOrmModule} from "@nestjs/typeorm";
 import {PromocionEntity} from "./promocion.entity";
+import {AppService} from '../app.service';
 
 @Module({
     imports:[
@@ -14,7 +15,7 @@ import {PromocionEntity} from "./promocion.entity";
         ),
     ],
     controllers:[PromocionController],
-    providers: [PromocionService],
+    providers: [PromocionService, AppService],
     exports: [PromocionService]
 
 })

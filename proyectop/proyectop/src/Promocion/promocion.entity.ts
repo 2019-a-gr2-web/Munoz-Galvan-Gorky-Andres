@@ -19,7 +19,7 @@ export class PromocionEntity {
         name: 'fechaValidaPromocion',
         nullable:true
     })
-    fechaValidaPromocion: Date;
+    fechaValidaPromocion: string;
 
     @OneToMany(type=> ProductoPromocionEntity,
         producto_promocion => producto_promocion.promocion)

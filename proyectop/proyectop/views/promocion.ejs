@@ -18,11 +18,76 @@
         </div>
         <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Promociones</a></li>
+            <li><a href="/api/producto/verProductos">Productos</a></li>
+            <li><a href="/api/promocion/verPromociones">Promociones</a></li>
         </ul>
     </div>
 </nav>
+
+<script>
+
+</script>
+
+<div class="panel panel-primary col-md-6">
+    <div class="panel-heading">TODOS MIS PRODUCTOS</div>
+    <div class="panel-body">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Opciones</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% arregloPromociones.forEach((plato)=>{ %>
+                <tr>
+                    <form action="/api/promocion/editar" method="post">
+
+                        <td><input id="nombreId" type="text" class="form-control" name="nombrePromocion"
+                                   value="<%= plato.nombrePromocion %>"></td>
+                        <td><input id="descripcionId" type="date" class="form-control" name="fechaValidaPromocion"
+                                   value="<%= plato.fechaValidaPromocion %>"></td>
+
+                        <input id="Id" type="hidden" class="form-control" name="id" value="<%= plato.id %>">
+                        <td>
+                            <button class="btn btn-info">Editar</button>
+                        </td>
+                    </form>
+                    <td>
+                        <form action="/api/promocion/eliminar" method="post">
+                            <input id="Id" type="hidden" class="form-control" name="id" value="<%= plato.id %>">
+                            <button class="btn btn-danger">Eliminar</button>
+                        </form>
+                    </td>
+
+                </tr>
+            <% }) %>
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+<div class="panel panel-primary col-md-6">
+    <div class="panel-heading">CREAR PRODUCTO</div>
+    <div class="panel-body">
+        <form action="crear" method="post">
+            <div class="form-group">
+                <label for="usr">Nombre:</label>
+                <input name="nombrePromocion" type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="usr">Fecha:</label>
+                <input name="fechaValidaPromocion" type="date" class="form-control" id="usr">
+            </div>
+
+            <button type="submit" class="btn btn-success">Crear</button>
+        </form>
+    </div>
+</div>
 
 
 </body>
