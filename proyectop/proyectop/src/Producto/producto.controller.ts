@@ -1,6 +1,9 @@
-import {Controller} from "@nestjs/common";
+import {Controller, Get, Res} from "@nestjs/common";
 
-@Controller('api/producto')
+@Controller('/api/producto')
 export class ProductoController {
-
+    @Get('verProductos')
+    verProductos(@Res() res) {
+        res.render('producto')
+    }
 }

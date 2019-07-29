@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90adf8ad-339a-4f9c-8e7a-96a175b607b6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/proyectop/proyectop/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/proyectop/proyectop/views/producto.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/proyectop/proyectop/views/promocion.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyectop/proyectop/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/proyectop/proyectop/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyectop/proyectop/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/proyectop/proyectop/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyectop/proyectop/src/Producto/producto.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyectop/proyectop/src/Producto/producto.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyectop/proyectop/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyectop/proyectop/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyectop/proyectop/views/producto.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/proyectop/proyectop/views/producto.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,24 +24,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.controller.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/archivo.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/proyectop/proyectop/src/main.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="237">
@@ -51,13 +36,95 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proyectop/proyectop/src/app.controller.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proyectop/proyectop/src/Producto/producto.controller.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proyectop/proyectop/src/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/proyectop/proyectop/src/Producto/producto.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="13" column="13" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="13" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proyectop/proyectop/src/Promocion/promocion.entity.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#74#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proyectop/proyectop/src/Producto/producto.entity.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proyectop/proyectop/src/Promocion/promocion.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="13" column="10" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="13" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proyectop/proyectop/views/promocion.ejs">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proyectop/proyectop/views/producto.ejs">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -75,10 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/PruebaPrimerBimestre/prueba-primer-bimestre/views/producto/crear-producto.ejs" />
-        <option value="$PROJECT_DIR$/PruebaPrimerBimestre/prueba-primer-bimestre/src/tienda/tienda.module.ts" />
-        <option value="$PROJECT_DIR$/PruebaPrimerBimestre/prueba-primer-bimestre/src/producto/producto.module.ts" />
-        <option value="$PROJECT_DIR$/PruebaPrimerBimestre/prueba-primer-bimestre/src/tienda/tienda.controller.ts" />
         <option value="$PROJECT_DIR$/PruebaPrimerBimestre/prueba-primer-bimestre/src/app.service.ts" />
         <option value="$PROJECT_DIR$/PruebaPrimerBimestre/prueba-primer-bimestre/src/producto/producto.service.ts" />
         <option value="$PROJECT_DIR$/PruebaPrimerBimestre/prueba-primer-bimestre/views/producto/listar-productos.ejs" />
@@ -126,14 +189,17 @@
         <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/app.controller.ts" />
         <option value="$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/archivo.ejs" />
         <option value="$PROJECT_DIR$/proyectop/proyectop/src/main.ts" />
+        <option value="$PROJECT_DIR$/proyectop/proyectop/views/producto.ejs" />
+        <option value="$PROJECT_DIR$/proyectop/proyectop/src/Producto/producto.controller.ts" />
+        <option value="$PROJECT_DIR$/proyectop/proyectop/src/app.module.ts" />
+        <option value="$PROJECT_DIR$/proyectop/proyectop/src/Producto/producto.module.ts" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-15" />
-    <option name="y" value="20" />
-    <option name="width" value="1347" />
-    <option name="height" value="695" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -151,6 +217,22 @@
             <path>
               <item name="Munoz-Galvan-Gorky-Andres" type="b2602c69:ProjectViewProjectNode" />
               <item name="Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
+              <item name="proyecto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Munoz-Galvan-Gorky-Andres" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
+              <item name="ProyectoIndividual" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Munoz-Galvan-Gorky-Andres" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
+              <item name="ProyectoIndividual" type="462c0819:PsiDirectoryNode" />
+              <item name="proyecto-individual" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Munoz-Galvan-Gorky-Andres" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
               <item name="proyectop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -158,6 +240,37 @@
               <item name="Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
               <item name="proyectop" type="462c0819:PsiDirectoryNode" />
               <item name="proyectop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Munoz-Galvan-Gorky-Andres" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
+              <item name="proyectop" type="462c0819:PsiDirectoryNode" />
+              <item name="proyectop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Munoz-Galvan-Gorky-Andres" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
+              <item name="proyectop" type="462c0819:PsiDirectoryNode" />
+              <item name="proyectop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Producto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Munoz-Galvan-Gorky-Andres" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
+              <item name="proyectop" type="462c0819:PsiDirectoryNode" />
+              <item name="proyectop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ProductoPromocion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Munoz-Galvan-Gorky-Andres" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Munoz-Galvan-Gorky-Andres" type="462c0819:PsiDirectoryNode" />
+              <item name="proyectop" type="462c0819:PsiDirectoryNode" />
+              <item name="proyectop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Promocion" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Munoz-Galvan-Gorky-Andres" type="b2602c69:ProjectViewProjectNode" />
@@ -189,11 +302,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/WebstormProjects/primerProyecto" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/proyectop/proyectop" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="D:\GitHub\Munoz-Galvan-Gorky-Andres\ProyectoIndividual\proyecto-individual\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\Munoz-Galvan-Gorky-Andres\proyectop\proyectop" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\01-http\02-servidor-web-nodejs\api-web\src\distribuidor" />
       <recent name="C:\Users\Gorky\Documents\GitHub\Web-Munoz-Galvan-Gorky-Andres\PruebaPrimerBimestre\prueba-primer-bimestre\src\producto" />
@@ -265,18 +381,18 @@
       <workItem from="1562520514570" duration="5416000" />
       <workItem from="1562704262024" duration="5169000" />
       <workItem from="1562789719253" duration="5795000" />
-      <workItem from="1564371296367" duration="778000" />
+      <workItem from="1564371296367" duration="1617000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208010000" />
+    <option name="totallyTimeSpent" value="208849000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1870456" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1870456" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -289,7 +405,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32991454" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.32991454" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49776787" visible="true" weight="0.49117646" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49776787" visible="true" weight="0.49117646" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5014881" side_tool="true" weight="0.32991454" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -320,67 +436,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/fiesta/fiesta.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/tragos.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/dto/tragos.update.dto.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/componentes/footer/footer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/componentes/menu/menu.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="51" selection-start-column="51" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/tragos/lista-tragos.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/views/tragos/crear-editar.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="66" selection-start-line="66" selection-end-line="66" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/tragos.controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!block;n#eliminarTrago#0;n#TragosController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01-http/02-servidor-web-nodejs/api-web/src/tragos/dto/tragos.create.dto.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -690,11 +745,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/proyectop/proyectop/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyectop/proyectop/src/app.controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/proyectop/proyectop/views/promocion.ejs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/proyectop/proyectop/views/producto.ejs">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proyectop/proyectop/src/main.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -702,6 +777,61 @@
           <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyectop/proyectop/src/Producto/producto.controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyectop/proyectop/src/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyectop/proyectop/src/Producto/producto.entity.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyectop/proyectop/src/Promocion/promocion.entity.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyectop/proyectop/src/Promocion/promocion.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="13" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyectop/proyectop/src/Producto/producto.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
