@@ -7,8 +7,9 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import {ProductoEntity} from './Producto/producto.entity';
 import {ProductoPromocionEntity} from './ProductoPromocion/producto.promocion.entity';
 import {PromocionEntity} from './Promocion/promocion.entity';
+import {ProductoPromocionModule} from './ProductoPromocion/producto.promocion.module';
 @Module({
-  imports: [ProductoModule, PromocionModule,
+  imports: [ProductoModule, PromocionModule, ProductoPromocionModule,
     TypeOrmModule.forRoot({
     name: 'default', //Nombre por defecto del TYPEORM
     type: 'mysql',

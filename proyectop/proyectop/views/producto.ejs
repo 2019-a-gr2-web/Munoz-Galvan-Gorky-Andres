@@ -31,6 +31,17 @@
 <div class="panel panel-primary col-md-6">
     <div class="panel-heading">TODOS MIS PRODUCTOS</div>
     <div class="panel-body">
+        <form action="/api/producto/buscar" method="post">
+
+
+
+            <input id="search" type="text" class="form-control" name="texto" placeholder="Búsqueda...">
+
+
+
+            <button class="btn btn-success">Buscar</button>
+
+        </form>
         <table class="table table-hover">
             <thead>
             <tr>

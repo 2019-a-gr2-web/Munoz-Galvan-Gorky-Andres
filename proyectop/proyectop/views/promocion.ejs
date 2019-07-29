@@ -52,13 +52,18 @@
 
                         <input id="Id" type="hidden" class="form-control" name="id" value="<%= plato.id %>">
                         <td>
-                            <button class="btn btn-info">Editar</button>
+                            <button class="btn btn-success">Editar</button>
                         </td>
                     </form>
                     <td>
                         <form action="/api/promocion/eliminar" method="post">
                             <input id="Id" type="hidden" class="form-control" name="id" value="<%= plato.id %>">
                             <button class="btn btn-danger">Eliminar</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/api/producto-promocion/ver/<%= plato.id%>" method="get">
+                            <button class="btn btn-success">productos</button>
                         </form>
                     </td>
 

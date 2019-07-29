@@ -15,6 +15,18 @@ export class ProductoController {
         this.appService.listaProductos=arregloProductos
         res.render('producto',{arregloProductos})
     }
+    @Post('buscar')
+    async buscar(@Res() res, @Body() body){
+
+        var arregloProductos= this.appService.listaProductos.filter(
+            value => {
+                return value.nombreProducto.toUpperCase().includes(body.texto.toUpperCase())
+            }
+        )
+        res.render('producto',{arregloProductos})
+
+    }
+
     @Post('editar')
     async editar(@Res() res, @Body() produto:ProductoEntity){
         const productoEditado= await this._productosService.editar(produto)

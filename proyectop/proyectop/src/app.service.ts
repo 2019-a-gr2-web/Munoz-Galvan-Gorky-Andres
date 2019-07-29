@@ -6,6 +6,8 @@ import {PromocionEntity} from './Promocion/promocion.entity';
 export class AppService {
   listaProductos:ProductoEntity[]=[]
   listaPromociones:PromocionEntity[]=[]
+  productosSeleccionado: any[]=[]
+  productosDisponibles: any[]=[]
   getHello(): string {
     return 'Hello World!';
   }
