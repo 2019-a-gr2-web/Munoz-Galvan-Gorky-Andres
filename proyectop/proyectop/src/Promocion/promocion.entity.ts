@@ -5,7 +5,7 @@ import {ProductoPromocionEntity} from "../ProductoPromocion/producto.promocion.e
 export class PromocionEntity {
 
     @PrimaryGeneratedColumn()
-    idPromocion:number;
+    id:number;
 
     @Column({
         type:'varchar',
@@ -22,6 +22,6 @@ export class PromocionEntity {
     fechaValidaPromocion: Date;
 
     @OneToMany(type=> ProductoPromocionEntity,
-        producto_promocion => producto_promocion.promocionId)
+        producto_promocion => producto_promocion.promocion)
     productoPromocion: ProductoPromocionEntity[];
 }

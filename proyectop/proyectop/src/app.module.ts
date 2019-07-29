@@ -16,13 +16,16 @@ import {PromocionEntity} from './Promocion/promocion.entity';
     port: 3306,
     username: 'root',
     password: 'root',
-    database: 'db_restaurante',
+    database: 'proyectoindividualweb',
     entities: [ProductoEntity,ProductoPromocionEntity, PromocionEntity],
-    synchronize: true,
+
+
+
+
 
     //  insecureAuth: true
   }),],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule{}

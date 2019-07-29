@@ -6,15 +6,15 @@ import {PromocionEntity} from "../Promocion/promocion.entity";
 export class ProductoPromocionEntity {
 
     @PrimaryGeneratedColumn()
-    idProductoPromocion:number;
+    id:number;
 
 
     @ManyToOne(type => ProductoEntity,
         producto=>producto.productoPromocion)
-    productoId: ProductoEntity
+    producto: number
 
     @ManyToOne(type => PromocionEntity,
         promocion=>promocion.productoPromocion)
-    promocionId: PromocionEntity
+    promocion: number
 
 }

@@ -4,11 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 <body>
-holaa
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Promociones</a></li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+
+</script>
+
+<div class="panel panel-primary col-md-6">
+    <div class="panel-heading">TODOS MIS PRODUCTOS</div>
+    <div class="panel-body">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Opciones</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% arregloProductos.forEach((plato)=>{ %>
+                <tr>
+                    <form action="/api/producto/editar" method="post">
+
+                        <td><input id="nombreId" type="text" class="form-control" name="nombreProducto"
+                                   value="<%= plato.nombreProducto %>"></td>
+                        <td><input id="descripcionId" type="text" class="form-control" name="precioProducto"
+                                   value="<%= plato.precioProducto %>"></td>
+
+                        <input id="Id" type="hidden" class="form-control" name="id" value="<%= plato.id %>">
+                        <td>
+                            <button class="btn btn-info">Editar</button>
+                        </td>
+                    </form>
+                    <td>
+                        <form action="/api/plato/eliminar" method="post">
+                            <input id="Id" type="hidden" class="form-control" name="id" value="<%= plato.id %>">
+                            <button class="btn btn-danger">Eliminar</button>
+                        </form>
+                    </td>
+
+                </tr>
+            <% }) %>
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+<div class="panel panel-primary col-md-6">
+    <div class="panel-heading">CREAR PRODUCTO</div>
+    <div class="panel-body">
+        <form action="crear" method="post">
+            <div class="form-group">
+                <label for="usr">Nombre:</label>
+                <input name="nombreProducto" type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="usr">Precio:</label>
+                <input name="precioProducto" type="text" class="form-control" id="usr">
+            </div>
+
+            <button type="submit" class="btn btn-success">Crear</button>
+        </form>
+    </div>
+</div>
+
 
 </body>
 </html>
