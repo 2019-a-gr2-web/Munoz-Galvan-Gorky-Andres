@@ -30,7 +30,8 @@ export class ProductoController {
     @Post('editar')
     async editar(@Res() res, @Body() produto:ProductoEntity){
         const productoEditado= await this._productosService.editar(produto)
-        res.render('producto', this.appService.listaProductos)
+        const arregloProductos=this.appService.listaProductos
+        res.render('producto', {arregloProductos})
     }
     @Post('crear')
     async crear(@Res() res, @Body() produto:ProductoEntity){
